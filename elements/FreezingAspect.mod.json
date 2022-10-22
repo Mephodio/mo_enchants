@@ -1,0 +1,29 @@
+{
+  "_fv": 33,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Freezing Aspect",
+    "type": "WEAPON",
+    "rarity": "VERY_RARE",
+    "minLevel": 1,
+    "maxLevel": 3,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "FIRE_ASPECT"
+      },
+      {
+        "value": "CUSTOM:ToxicAspect"
+      },
+      {
+        "value": "CUSTOM:LifeSteal"
+      }
+    ],
+    "compatibleItems": [],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": false
+  }
+}

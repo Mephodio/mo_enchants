@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[38,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="mo_enchants"
+version="1.4.2-RELEASE+1.18.2MC"
+displayName="Mo' Enchants"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mo-enchants"
+logoFile="logo.png"
+authors="LDM"
+description='''
+Adds more enchantments and curses to Minecraft!
+'''
+
+[[dependencies.mo_enchants]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

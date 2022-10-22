@@ -1,0 +1,1262 @@
+{
+  "mod_elements": [
+    {
+      "name": "CurseOfHarming",
+      "type": "enchantment",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "harming_curse"
+    },
+    {
+      "name": "CurseOfHarmingHelper",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_of_harming_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UltimateFinish",
+      "type": "enchantment",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ultimate_finish"
+    },
+    {
+      "name": "UltimateFinishHelper",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_finish_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CurseOfScorching",
+      "type": "enchantment",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scorching_curse"
+    },
+    {
+      "name": "CurseOfScorchingHelper",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_of_scorching_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ToxicAspect",
+      "type": "enchantment",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "venomfang"
+    },
+    {
+      "name": "ToxicAspectHelper",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_aspect_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SmeltingTouch",
+      "type": "enchantment",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "smelting_touch"
+    },
+    {
+      "name": "SmeltingTouchHelper",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelting_touch_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LifeSteal",
+      "type": "enchantment",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "life_steal"
+    },
+    {
+      "name": "LifeStealHelper",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "life_steal_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FreezingAspect",
+      "type": "enchantment",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "freezing_aspect"
+    },
+    {
+      "name": "FreezingAspectHelper",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezing_aspect_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LifeforceDischargeCurse",
+      "type": "enchantment",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifeforce_discharge_curse"
+    },
+    {
+      "name": "LifeforceDischargeCurseHelper",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lifeforce_discharge_curse_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Panic",
+      "type": "enchantment",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "panic"
+    },
+    {
+      "name": "PanicHelper",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "panic_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Conduction",
+      "type": "enchantment",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "conduction"
+    },
+    {
+      "name": "ConductionHelper",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "conduction_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SavingGrace",
+      "type": "enchantment",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saving_grace"
+    },
+    {
+      "name": "SavingGraceHelper",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "saving_grace_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Frost",
+      "type": "enchantment",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "frost"
+    },
+    {
+      "name": "FrostHelper",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frost_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AquaSlash",
+      "type": "enchantment",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "aqua_slash"
+    },
+    {
+      "name": "AquaSlashHelper",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aqua_slash_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hunter",
+      "type": "enchantment",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "hunter"
+    },
+    {
+      "name": "HunterHelper",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Acceleration",
+      "type": "enchantment",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "swiftness"
+    },
+    {
+      "name": "AccelerationHelper",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "acceleration_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulSpark",
+      "type": "enchantment",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_spark"
+    },
+    {
+      "name": "SoulSparkHelper",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_spark_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BoilingCurse",
+      "type": "enchantment",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boiling_curse"
+    },
+    {
+      "name": "BoilingCurseHelper",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boiling_curse_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FreezingCurse",
+      "type": "enchantment",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezing_curse"
+    },
+    {
+      "name": "FreezingCurseHelper",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "freezing_curse_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BadDreamsCurse",
+      "type": "enchantment",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bad_dreams_curse"
+    },
+    {
+      "name": "BadDreamsCurseHelper",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bad_dreams_curse_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AngelsBlessing",
+      "type": "enchantment",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angels_blessing"
+    },
+    {
+      "name": "AngelsBlessingHelper",
+      "type": "procedure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angels_blessing_nbt_manager",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RockMending",
+      "type": "enchantment",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rock_mending"
+    },
+    {
+      "name": "RockMedingHelper",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rock_meding_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Levitating",
+      "type": "enchantment",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "levitating"
+    },
+    {
+      "name": "LevitatingHelper",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "levitating_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Detonation",
+      "type": "enchantment",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "detonation"
+    },
+    {
+      "name": "DetonationHelper",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detonation_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NightVision",
+      "type": "enchantment",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "night_vision"
+    },
+    {
+      "name": "NightVisionHelper",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "night_vision_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AquaphobiaCurse",
+      "type": "enchantment",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquaphobia_curse"
+    },
+    {
+      "name": "AquaphobiaCurseHelper",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aquaphobia_curse_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Leaping",
+      "type": "enchantment",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "leaping"
+    },
+    {
+      "name": "LeapingHelper",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "leaping_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DensityCurse",
+      "type": "enchantment",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "density_curse"
+    },
+    {
+      "name": "DensityCurseHelper",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "density_curse_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reach",
+      "type": "enchantment",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "reach"
+    },
+    {
+      "name": "TotemlikeAnimationMainhand",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totemlike_animation_mainhand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NBT Effects"
+    },
+    {
+      "name": "TotemlikeAnimationOffhand",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "totemlike_animation_offhand",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NBT Effects"
+    },
+    {
+      "name": "ReachHelper",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "reach_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bloodthirst",
+      "type": "enchantment",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bloodthirst"
+    },
+    {
+      "name": "BloodthirstHelper",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodthirst_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Revenant",
+      "type": "enchantment",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "revenant"
+    },
+    {
+      "name": "RevenantHelper",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revenant_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MagmaWalker",
+      "type": "enchantment",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "magma_walker"
+    },
+    {
+      "name": "LiquefyingMagmaBlockAdded",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquefying_magma_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NBT Effects"
+    },
+    {
+      "name": "LiquefyingMagmaBlockDestroyed",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquefying_magma_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/NBT Effects"
+    },
+    {
+      "name": "LiquefyingMagmaBlock",
+      "type": "block",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquefying_magma_block",
+      "path": "~/NBT Effects"
+    },
+    {
+      "name": "MagmaWalkerHelper",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magma_walker_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireCoating",
+      "type": "enchantment",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "fire_coating"
+    },
+    {
+      "name": "FireCoatingHelper",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_coating_helper",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bosses",
+      "type": "tag",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bosses",
+      "path": "~/NBT Effects"
+    },
+    {
+      "name": "Growth",
+      "type": "enchantment",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "growth"
+    },
+    {
+      "name": "GrowthHelper",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "growth_helper",
+      "metadata": {
+        "dependencies": []
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "death.attack.curse.harming.player": "%1$s hit themself too hard whilst trying to kill %2$s",
+      "enchantment.mo_enchants.swiftness": "Swiftness",
+      "enchantment.mo_enchants.detonation": "Detonation",
+      "enchantment.mo_enchants.panic": "Panic",
+      "cooldown.generic": "§cThis ability is on cooldown!",
+      "enchantment.mo_enchants.revenant": "Revenant",
+      "enchantment.mo_enchants.scorching_curse": "Curse of Scorching",
+      "enchantment.mo_enchants.bad_dreams_curse": "Curse of Bad Dreams",
+      "death.attack.enchantment.bloodthirst": "%1$s got too bloodthirsty",
+      "enchantment.mo_enchants.saving_grace": "§6Saving Grace",
+      "death.attack.curse.bad_dreams.player": "%1$s had a bad dream whilst trying to escape %2$s",
+      "key.category.enchantments": "Enchantments",
+      "death.attack.curse.generic": "%1$s was cursed",
+      "death.attack.curse.bad_dreams": "%1$s had a bad dream",
+      "enchantment.mo_enchants.leaping": "Leaping",
+      "enchantment.mo_enchants.hunter": "Hunter",
+      "enchantment.mo_enchants.smelting_touch": "Smelting Touch",
+      "enchantment.mo_enchants.aqua_slash": "Aqua Slash",
+      "enchantment.mo_enchants.magma_walker": "Magma Walker",
+      "enchantment.mo_enchants.aquaphobia_curse": "Curse of Aquaphobia",
+      "enchantment.mo_enchants.density_curse": "Curse of Density",
+      "enchantment.mo_enchants.reach": "Reach",
+      "death.attack.enchantment.bloodthirst.player": "%1$s got too bloodthirsty trying to kill %2$s",
+      "enchantment.mo_enchants.lifeforce_discharge_curse": "Lifeforce Discharge",
+      "death.attack.curse.aquaphobia": "%1$s forgot they were aquaphobic",
+      "enchantment.mo_enchants.frost": "Frost",
+      "enchantment.mo_enchants.freezing_curse": "Curse of Freezing",
+      "enchantment.mo_enchants.boiling_curse": "Curse of Boiling",
+      "enchantment.mo_enchants.life_steal": "Life Steal",
+      "death.attack.curse.freezing": "%1$s froze to death",
+      "enchantment.mo_enchants.fire_coating": "Fire Coating",
+      "enchantment.mo_enchants.night_vision": "Night Vision",
+      "enchantment.mo_enchants.levitating": "Levitating",
+      "enchantment.mo_enchants.ultimate_finish": "Ultimate Finish",
+      "enchantment.mo_enchants.harming_curse": "Curse of Harming",
+      "block.mo_enchants.liquefying_magma_block": "Liquefying Magma Block",
+      "enchantment.mo_enchants.rock_mending": "Rock Mending",
+      "death.attack.curse.harming": "%1$s hit themself too hard",
+      "enchantment.mo_enchants.growth": "Growth",
+      "enchantment.mo_enchants.angels_blessing": "�6Angel\u0027s Blessing",
+      "enchantment.mo_enchants.venomfang": "Venomfang",
+      "death.attack.curse.lifeforce_discharge": "%1$s got their lifeforce discharged",
+      "enchantment.mo_enchants.bloodthirst": "Bloodthirst",
+      "death.attack.curse.aquaphobia.player": "%1$s forgot they were aquaphobic and tried to escape %2$s",
+      "enchantment.mo_enchants.freezing_aspect": "Freezing Aspect",
+      "enchantment.mo_enchants.conduction": "Conduction",
+      "death.attack.curse.lifeforce_discharge.player": "%1$s got their lifeforce discharged whilst trying to kill %2$s",
+      "enchantment.mo_enchants.soul_spark": "Soul Spark",
+      "death.attack.curse.freezing.player": "%1$s froze to death whilst trying to escape %2$s"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Potion Effects",
+        "children": []
+      },
+      {
+        "name": "NBT Effects",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "mo_enchants",
+    "modName": "Mo\u0027 Enchants",
+    "version": "1.4.1-RELEASE+1.18.2MC",
+    "description": "Adds more enchantments and curses to Minecraft!",
+    "author": "LDM",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/mo-enchants",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "modicon",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "N/A",
+    "modElementsPackage": "net.ldm.mo_enchants",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200233511
+}

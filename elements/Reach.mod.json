@@ -1,0 +1,29 @@
+{
+  "_fv": 33,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Reach",
+    "type": "DIGGER",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 4,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "FORTUNE"
+      },
+      {
+        "value": "SILK_TOUCH"
+      },
+      {
+        "value": "CUSTOM:SmeltingTouch"
+      }
+    ],
+    "compatibleItems": [],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

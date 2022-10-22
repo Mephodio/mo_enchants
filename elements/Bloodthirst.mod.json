@@ -1,0 +1,23 @@
+{
+  "_fv": 33,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Bloodthirst",
+    "type": "WEAPON",
+    "rarity": "VERY_RARE",
+    "minLevel": 1,
+    "maxLevel": 2,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:Revenant"
+      }
+    ],
+    "compatibleItems": [],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

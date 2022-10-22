@@ -1,0 +1,39 @@
+{
+  "_fv": 33,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Conduction",
+    "type": "BOW",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "FLAME"
+      },
+      {
+        "value": "CUSTOM:Frost"
+      },
+      {
+        "value": "CUSTOM:Levitating"
+      },
+      {
+        "value": "CUSTOM:Detonation"
+      }
+    ],
+    "compatibleItems": [
+      {
+        "value": "Items.BOW"
+      },
+      {
+        "value": "Items.CROSSBOW"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": false
+  }
+}

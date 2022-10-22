@@ -1,0 +1,23 @@
+{
+  "_fv": 33,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Night Vision",
+    "type": "ARMOR_HEAD",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "AQUA_AFFINITY"
+      }
+    ],
+    "compatibleItems": [],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}
