@@ -21,8 +21,8 @@ import net.ldm.mo_enchants.procedures.LiquefyingMagmaBlockAddedProcedure;
 
 public class LiquefyingMagmaBlock extends Block {
 	public LiquefyingMagmaBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.5f, 0f).lightLevel(s -> 3).requiresCorrectToolForDrops()
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).noDrops());
+		super(Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.5f, 0f).lightLevel(s -> 3).requiresCorrectToolForDrops()
+				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).noLootTable());
 	}
 
 	@Override
