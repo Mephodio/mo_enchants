@@ -15,12 +15,12 @@ public class NightVisionHelperProcedure {
 	@SubscribeEvent
 	public static void OnEquipmentChange( LivingEquipmentChangeEvent event ) {
 		if (event.getSlot().equals(EquipmentSlot.HEAD) && EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.NIGHT_VISION.get(), event.getTo()) >= 1 &&
-		event.getEntityLiving() instanceof Player) {
-			event.getEntityLiving().addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 2147483647, 0, false, false, false));
+		event.getEntity() instanceof Player) {
+			event.getEntity().addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 2147483647, 0, false, false, false));
 		}
 
 		if (event.getSlot().equals(EquipmentSlot.HEAD) && EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.NIGHT_VISION.get(), event.getFrom()) >= 1 &&
-				event.getEntityLiving() instanceof Player)
-			event.getEntityLiving().removeEffect(MobEffects.NIGHT_VISION);
+				event.getEntity() instanceof Player)
+			event.getEntity().removeEffect(MobEffects.NIGHT_VISION);
 	}
 }

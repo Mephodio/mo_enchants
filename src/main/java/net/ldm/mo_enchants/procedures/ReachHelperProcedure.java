@@ -19,7 +19,7 @@ public class ReachHelperProcedure {
 	@SubscribeEvent
 	public static void onEquipmentChange( LivingEquipmentChangeEvent event) {
 		if (event.getSlot().equals(EquipmentSlot.MAINHAND)) {
-			final AttributeInstance attributeInstance = event.getEntityLiving().getAttributes().getInstance(ForgeMod.REACH_DISTANCE.get());
+			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(ForgeMod.REACH_DISTANCE.get());
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:1s}") && !attributeInstance.hasModifier(reachEnchantmentLv1)) {
 				attributeInstance.addPermanentModifier(reachEnchantmentLv1);

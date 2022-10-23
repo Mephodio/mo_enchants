@@ -21,7 +21,7 @@ public class GrowthHelperProcedure {
 	public static void onEquipmentChange(LivingEquipmentChangeEvent event) {
 		if (event.getSlot().equals(EquipmentSlot.HEAD) || event.getSlot().equals(EquipmentSlot.CHEST) ||
 				event.getSlot().equals(EquipmentSlot.LEGS) || event.getSlot().equals(EquipmentSlot.FEET)) {
-			final AttributeInstance attributeInstance = event.getEntityLiving().getAttributes().getInstance(Attributes.MAX_HEALTH);
+			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(Attributes.MAX_HEALTH);
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:1s}") && !attributeInstance.hasModifier(growthEnchantmentLv1)) {
 				attributeInstance.addPermanentModifier(growthEnchantmentLv1);

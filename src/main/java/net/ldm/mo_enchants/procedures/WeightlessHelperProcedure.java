@@ -18,7 +18,7 @@ public class WeightlessHelperProcedure {
 	@SubscribeEvent
 	public static void onEquipmentChange( LivingEquipmentChangeEvent event) {
 		if (event.getSlot().equals(EquipmentSlot.LEGS)) {
-			final AttributeInstance attributeInstance = event.getEntityLiving().getAttributes().getInstance(ForgeMod.ENTITY_GRAVITY.get());
+			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(ForgeMod.ENTITY_GRAVITY.get());
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:1s}") && !attributeInstance.hasModifier(weightlessEnchantmentLv1)) {
 				attributeInstance.addPermanentModifier(weightlessEnchantmentLv1);

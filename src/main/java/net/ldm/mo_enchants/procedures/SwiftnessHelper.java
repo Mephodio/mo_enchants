@@ -19,7 +19,7 @@ public class SwiftnessHelper {
 	@SubscribeEvent
 	public static void onEquipmentChange( LivingEquipmentChangeEvent event) {
 		if (event.getSlot().equals(EquipmentSlot.FEET)) {
-			final AttributeInstance attributeInstance = event.getEntityLiving().getAttributes().getInstance(Attributes.MOVEMENT_SPEED);
+			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(Attributes.MOVEMENT_SPEED);
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:1s}") && !attributeInstance.hasModifier(swiftnessEnchantmentLv1)) {
 				attributeInstance.addPermanentModifier(swiftnessEnchantmentLv1);
