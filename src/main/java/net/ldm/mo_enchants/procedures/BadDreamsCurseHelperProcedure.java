@@ -2,7 +2,6 @@ package net.ldm.mo_enchants.procedures;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -14,20 +13,14 @@ import net.minecraft.world.damagesource.DamageSource;
 
 import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 
-import javax.annotation.Nullable;
-
 @Mod.EventBusSubscriber
 public class BadDreamsCurseHelperProcedure {
 	@SubscribeEvent
 	public static void onPlayerInBed(PlayerSleepInBedEvent event) {
-		execute(event, event.getPlayer());
+		execute(event.getEntity());
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
-	}
-
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(Entity entity) {
 		if (entity == null)
 			return;
 		if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.BAD_DREAMS_CURSE.get(),
