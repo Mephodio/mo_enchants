@@ -1,6 +1,9 @@
 package net.ldm.mo_enchants.procedures;
 
 import net.minecraft.core.Holder;
+import net.minecraft.core.Registry;
+import net.minecraft.core.RegistryAccess;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.fml.common.Mod;
@@ -31,7 +34,7 @@ public class BoilingCurseHelperProcedure {
 			return;
 		world.getBiome(pos).value();
 		Holder<Biome> biome = world.getBiome(pos);
-		if (biome.containsTag(Tags.Biomes.IS_DRY) || biome.containsTag(Tags.Biomes.IS_HOT) || entity.level.dimension() == Level.NETHER
+		if (biome.is(Tags.Biomes.IS_DRY) || biome.is(Tags.Biomes.IS_HOT) || entity.level.dimension() == Level.NETHER
 				&& (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BOILING_CURSE.get(),
 				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)) != 0
 						|| EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BOILING_CURSE.get(),

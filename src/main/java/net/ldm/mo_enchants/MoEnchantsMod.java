@@ -1,39 +1,22 @@
-/*
- *    MCreator note:
- *
- *    If you lock base mod element files, you can edit this file and it won't get overwritten.
- *    If you change your modid or package, you need to apply these changes to this file MANUALLY.
- *
- *    Settings in @Mod annotation WON'T be changed in case of the base mod element
- *    files lock too, so you need to set them manually here in such case.
- *
- *    If you do not lock base mod element files in Workspace settings, this file
- *    will be REGENERATED on each build.
- *
- */
 package net.ldm.mo_enchants;
 
-import net.minecraftforge.common.MinecraftForge;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-
-import net.minecraftforge.network.simple.SimpleChannel;
-import net.minecraftforge.network.NetworkRegistry;
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.IEventBus;
-
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.FriendlyByteBuf;
-
-import net.ldm.mo_enchants.init.MoEnchantsItems;
-import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 import net.ldm.mo_enchants.init.MoEnchantsBlocks;
+import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
+import net.ldm.mo_enchants.init.MoEnchantsItems;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.network.NetworkEvent;
+import net.minecraftforge.network.NetworkRegistry;
+import net.minecraftforge.network.simple.SimpleChannel;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import java.util.function.Supplier;
-import java.util.function.Function;
 import java.util.function.BiConsumer;
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 @Mod("mo_enchants")
 public class MoEnchantsMod {
