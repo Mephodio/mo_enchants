@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 
-version = '1.4.2-RELEASE+1.18.2-MC'
+version = '1.5-RELEASE+1.19.2-MC'
 group = 'net.ldm.mo_enchants'
 archivesBaseName = 'mo_enchants'
 
@@ -51,7 +51,7 @@ minecraft {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.0'
+    minecraft 'net.minecraftforge:forge:1.19.2-43.1.1'
 }
 
 tasks.withType(JavaCompile).configureEach {

@@ -16,7 +16,7 @@ Adds more enchantments and curses to Minecraft!
 [[dependencies.mo_enchants]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2]"
+    versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"
 
