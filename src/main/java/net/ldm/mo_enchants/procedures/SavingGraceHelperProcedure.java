@@ -1,5 +1,6 @@
 package net.ldm.mo_enchants.procedures;
 
+import net.minecraft.util.RandomSource;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
