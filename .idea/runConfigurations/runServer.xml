@@ -8,7 +8,7 @@
     <module name="mo_enchants.main"/>
     <envs>
       <env name="MOD_CLASSES" value="examplemod%%$PROJECT_DIR$\build\resources\main;examplemod%%$PROJECT_DIR$\build\classes\java\main"/>
-      <env name="MCP_MAPPINGS" value="official_1.18.2"/>
+      <env name="MCP_MAPPINGS" value="official_1.19.2"/>
     </envs>
     <method v="2">
       <option enabled="true" name="Make"/>
