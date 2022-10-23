@@ -43,7 +43,7 @@ public class BloodthirstHelperProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(),
+		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(),
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			if (!entity.getPersistentData().getBoolean("bloodthirstAbilityCooldown")) {
 				if (entity instanceof LivingEntity _entity)
@@ -51,7 +51,7 @@ public class BloodthirstHelperProcedure {
 				entity.getPersistentData().putBoolean("bloodthirstAbilityCooldown", (true));
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 240,
-							(int) (-1 + EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(),
+							(int) (-1 + EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(),
 									(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)))));
 				if (entity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 0));
