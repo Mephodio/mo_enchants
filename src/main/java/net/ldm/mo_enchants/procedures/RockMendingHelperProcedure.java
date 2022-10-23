@@ -19,10 +19,10 @@ import javax.annotation.Nullable;
 import java.util.Random;
 
 @Mod.EventBusSubscriber
-public class RockMedingHelperProcedure {
+public class RockMendingHelperProcedure {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
-		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
+		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

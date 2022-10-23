@@ -275,7 +275,7 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 [17Aug.2022 13:17:28.746] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.PanicHelperProcedure to FORGE
 [17Aug.2022 13:17:28.748] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.ReachHelperProcedure to FORGE
 [17Aug.2022 13:17:28.750] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.RevenantHelperProcedure to FORGE
-[17Aug.2022 13:17:28.752] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.RockMedingHelperProcedure to FORGE
+[17Aug.2022 13:17:28.752] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.RockMendingHelperProcedure to FORGE
 [17Aug.2022 13:17:28.754] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.SavingGraceHelperProcedure to FORGE
 [17Aug.2022 13:17:28.756] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.SmeltingTouchHelperProcedure to FORGE
 [17Aug.2022 13:17:28.758] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.SwiftnessHelper to FORGE
