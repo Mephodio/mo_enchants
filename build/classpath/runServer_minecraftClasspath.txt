@@ -1,4 +1,4 @@
-C:\Users\Logan\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.1.1_mapped_official_1.18.2\forge-1.19.2-43.1.1_mapped_official_1.18.2-recomp.jar
+C:\Users\Logan\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.19.2-43.1.1_mapped_official_1.19.2\forge-1.19.2-43.1.1_mapped_official_1.19.2-recomp.jar
 C:\Users\Logan\.gradle\caches\forge_gradle\minecraft_repo\versions\1.19.2\client-extra.jar
 C:\Users\Logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.19.2-43.1.1\4ed0d46c3cd0883da364ee1aace4f012ab07f408\javafmllanguage-1.19.2-43.1.1.jar
 C:\Users\Logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.19.2-43.1.1\f185fdcfb9aa2db13cb366d80f6902bb29b10437\lowcodelanguage-1.19.2-43.1.1.jar
@@ -12,7 +12,7 @@ C:\Users\Logan\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr30
 C:\Users\Logan\.gradle\caches\modules-2\files-2.1\ca.weblite\java-objc-bridge\1.1\1227f9e0666314f9de41477e3ec277e542ed7f7b\java-objc-bridge-1.1.jar
 C:\Users\Logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mergetool\1.1.5\f3da18e12c696d35a47c82cbb2cc8b5aa15e1154\mergetool-1.1.5-api.jar
 C:\Users\Logan\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\23.0.0\8cc20c07506ec18e0834947b84a864bfc094484e\annotations-23.0.0.jar
-C:\Users\Logan\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.18.2\mapping-1.18.2-mapping.zip
+C:\Users\Logan\.gradle\caches\forge_gradle\mcp_repo\net\minecraft\mapping\1.19.2\mapping-1.19.2-mapping.zip
 C:\Users\Logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\coremods\5.0.1\386b00279628b105b2d507539c46e134e96f6237\coremods-5.0.1.jar
 C:\Users\Logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\forgespi\6.0.0\4a2004591666531f8b30d3402317b1ff6411bd3e\forgespi-6.0.0.jar
 C:\Users\Logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\accesstransformers\8.0.4\272d240aa73f42195b2a68e2ebd8b701ecf41f63\accesstransformers-8.0.4.jar
