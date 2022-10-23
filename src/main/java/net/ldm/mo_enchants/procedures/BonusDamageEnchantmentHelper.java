@@ -20,17 +20,17 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class BonusDamageEnchantmentHelper {
 	@SubscribeEvent
 	public static void onLivingDamage( LivingDamageEvent event ) {
-		if (event.getEntityLiving() instanceof Animal && event.getSource().getEntity() != null &&
+		if (event.getEntity() instanceof Animal && event.getSource().getEntity() != null &&
 				event.getSource().getEntity() instanceof LivingEntity attacker) {
-			if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.HUNTER.get(), attacker.getMainHandItem()) >= 1) {
-				event.setAmount((float) (event.getAmount() + EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.AQUA_SLASH.get(), attacker.getMainHandItem()) * 2.5));
+			if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.HUNTER.get(), attacker.getMainHandItem()) >= 1) {
+				event.setAmount((float) (event.getAmount() + EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.AQUA_SLASH.get(), attacker.getMainHandItem()) * 2.5));
 			}
 			return;
 		}
 
-		if (event.getEntityLiving().getHealth() == event.getEntityLiving().getMaxHealth() && event.getSource().getEntity() != null &&
+		if (event.getEntity().getHealth() == event.getEntity().getMaxHealth() && event.getSource().getEntity() != null &&
 				event.getSource().getEntity() instanceof LivingEntity attacker) {
-			if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.FIRST_STRIKE.get(), attacker.getMainHandItem()) >= 1) {
+			if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FIRST_STRIKE.get(), attacker.getMainHandItem()) >= 1) {
 				event.setAmount((float) (event.getAmount() * 1.25));
 				Level level = event.getSource().getEntity().getLevel();
 				float x = (float) event.getSource().getEntity().getX();
@@ -46,8 +46,8 @@ public class BonusDamageEnchantmentHelper {
 		}
 
 		if (event.getSource().getEntity() != null && event.getSource().getEntity() instanceof LivingEntity attacker) {
-			if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.DEVASTATION.get(), attacker.getMainHandItem()) >= 1 &&
-					Math.random() >= 0.1*EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.DEVASTATION.get(), attacker.getMainHandItem())) {
+			if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.DEVASTATION.get(), attacker.getMainHandItem()) >= 1 &&
+					Math.random() >= 0.1* EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.DEVASTATION.get(), attacker.getMainHandItem())) {
 				event.setAmount((float) (event.getAmount() *1.5));
 				Level level = event.getSource().getEntity().getLevel();
 				float x = (float) event.getSource().getEntity().getX();
@@ -62,12 +62,12 @@ public class BonusDamageEnchantmentHelper {
 			}
 		}
 
-		if (event.getEntityLiving() instanceof EnderMan || event.getEntityLiving() instanceof Blaze ||
-				event.getEntityLiving() instanceof MagmaCube && event.getSource().getEntity() != null &&
+		if (event.getEntity() instanceof EnderMan || event.getEntity() instanceof Blaze ||
+				event.getEntity() instanceof MagmaCube && event.getSource().getEntity() != null &&
 						event.getSource().getEntity() instanceof LivingEntity) {
 			LivingEntity attacker = (LivingEntity) event.getSource().getEntity();
-			if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.AQUA_SLASH.get(), attacker.getMainHandItem()) >= 1) {
-				event.setAmount((float) (event.getAmount() + EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.AQUA_SLASH.get(), attacker.getMainHandItem()) * 2.5));
+			if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.AQUA_SLASH.get(), attacker.getMainHandItem()) >= 1) {
+				event.setAmount((float) (event.getAmount() + EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.AQUA_SLASH.get(), attacker.getMainHandItem()) * 2.5));
 			}
 		}
 	}
