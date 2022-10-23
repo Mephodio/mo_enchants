@@ -1,5 +1,6 @@
 package net.ldm.mo_enchants.procedures;
 
+import net.minecraft.util.RandomSource;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -42,7 +43,7 @@ public class RockMendingHelperProcedure {
 			if (rand < 4) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-					if (_ist.hurt(-1, new Random(), null)) {
+					if (_ist.hurt(-1, (RandomSource) new Random(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
 					}
@@ -50,7 +51,7 @@ public class RockMendingHelperProcedure {
 			} else if (rand < 7) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-					if (_ist.hurt(-1, new Random(), null)) {
+					if (_ist.hurt(-1, (RandomSource) new Random(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
 					}
@@ -58,7 +59,7 @@ public class RockMendingHelperProcedure {
 			} else if (rand < 9) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-					if (_ist.hurt(-1, new Random(), null)) {
+					if (_ist.hurt(-1, (RandomSource) new Random(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
 					}
