@@ -1,5 +1,6 @@
 package net.ldm.mo_enchants.procedures;
 
+import net.minecraft.util.RandomSource;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -66,7 +67,7 @@ public class PanicHelperProcedure {
 			}
 			{
 				ItemStack _ist = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY);
-				if (_ist.hurt(15, new Random(), null)) {
+				if (_ist.hurt(15, RandomSource.create(), null)) {
 					_ist.shrink(1);
 					_ist.setDamageValue(0);
 				}

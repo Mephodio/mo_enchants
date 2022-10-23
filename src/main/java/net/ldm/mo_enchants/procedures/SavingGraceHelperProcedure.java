@@ -62,7 +62,7 @@ public class SavingGraceHelperProcedure {
 				}
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY);
-					if (_ist.hurt(20, new Random(), null)) {
+					if (_ist.hurt(20, RandomSource.create(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
 					}
@@ -91,7 +91,7 @@ public class SavingGraceHelperProcedure {
 				}
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY);
-					if (_ist.hurt(20, new Random(), null)) {
+					if (_ist.hurt(20, RandomSource.create(), null)) {
 						_ist.shrink(1);
 						_ist.setDamageValue(0);
 					}
