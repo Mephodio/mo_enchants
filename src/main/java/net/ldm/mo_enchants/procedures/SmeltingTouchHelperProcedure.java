@@ -3,7 +3,7 @@ package net.ldm.mo_enchants.procedures;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.event.world.BlockEvent;
+import net.minecraftforge.event.level.BlockEvent;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
