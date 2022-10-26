@@ -4,6 +4,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraftforge.fml.common.Mod;
@@ -33,24 +34,15 @@ public class FreezingCurseHelperProcedure {
 
 	static TagKey<Biome> IS_FROZEN = TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("mo_enchants", "is_frozen"));
 
-	private static void execute(LevelAccessor world, BlockPos pos, Entity entity) {
+	private static void execute(LevelAccessor world, BlockPos pos, Player entity) {
 		if (entity == null)
 			return;
 		Holder<Biome> biome = world.getBiome(pos);
-		if (biome.is(IS_FROZEN) && (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(),
-				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)) == 0
-				&& EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(),
-				(entity instanceof LivingEntity _entGetArmor
-						? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST)
-						: ItemStack.EMPTY)) == 0 && EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(),
-				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)) == 0)) {
-			EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(),
-					(entity instanceof LivingEntity _entGetArmor
-							? _entGetArmor.getItemBySlot(EquipmentSlot.FEET)
-							: ItemStack.EMPTY));
-		} {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 140, 1, (false), (false)));
+		if (biome.is(IS_FROZEN) && (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(), entity.getItemBySlot(EquipmentSlot.HEAD)) >= 1)
+				|| (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(), entity.getItemBySlot(EquipmentSlot.CHEST)) >= 1)
+				|| (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(), entity.getItemBySlot(EquipmentSlot.LEGS)) >= 1)
+				|| (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(), entity.getItemBySlot(EquipmentSlot.FEET)) >= 1)) {
+			entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 140, 1, false, false));
 		}
 	}
 }
