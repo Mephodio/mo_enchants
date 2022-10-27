@@ -1,6 +1,5 @@
 package net.ldm.mo_enchants.event;
 
-import net.ldm.mo_enchants.enchantment.RockMendingEnchantment;
 import net.ldm.mo_enchants.enchantment.helpers.*;
 import net.minecraft.core.BlockPos;
 import net.minecraftforge.event.TickEvent;
@@ -28,6 +27,7 @@ public class EventHandler {
             LifeStealHelper.execute(event, event.getSource().getEntity());
             RevenantHelper.execute(event, event.getEntity(), event.getSource().getEntity());
             ScorchingCurseHelper.execute(event, event.getEntity());
+            ToxicAspectHelper.execute(event, event.getEntity(), event.getSource().getEntity());
         }
     }
 
@@ -67,6 +67,7 @@ public class EventHandler {
     public static void onEntityDeath( LivingDeathEvent event) {
         if (event != null && event.getEntity() != null) {
             DetonationHelper.execute(event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource().getEntity());
+            UltimateFinishHelper.execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource().getEntity());
         }
     }
 
@@ -75,5 +76,7 @@ public class EventHandler {
         GrowthHelper.execute(event);
         NightVisionHelper.execute(event);
         ReachHelper.execute(event);
+        SwiftnessHelper.execute(event);
+        WeightlessHelper.execute(event);
     }
 }
