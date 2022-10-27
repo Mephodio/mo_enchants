@@ -12,12 +12,13 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber
-public class Events {
+public class EventHandler {
     @SubscribeEvent
     public static void onEntityAttacked( LivingHurtEvent event) {
         if (event != null && event.getEntity() != null) {
             AngelsBlessingHelper.execute(event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getAmount());
             ConductionHelper.execute(event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource().getEntity());
+            FreezingAspectHelper.execute(event.getEntity(), event.getSource().getEntity());
         }
     }
 

@@ -4,7 +4,7 @@
 - Continue moving event listeners to `Events.java`, starting from `FireCoatingHelper`
 - Optimize all helper classes, make more readable
 - Go through all enchantment classes, confirm everything is correct
-- Merge all bonus damage enchantment (e.g. Aqua Slash) into one class `BonusDamageEnchantment`
+- Merge all bonus damage enchantment (`Aqua Slash`, `Hunter`, `First Strike`, `Devestation`) into one class `BonusDamageEnchantment`
 - Move `TotemlikeAnimationMainhandProcedure` and `TotemlikeAnimationOffhandProcedure` into its own usages
 - Remove all `MCreator` traces (e.g. comments)
 - Optimize `init` classes
