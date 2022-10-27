@@ -24,7 +24,7 @@ import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class SmeltingTouchHelperProcedure {
+public class SmeltingTouchHelper {
 	@SubscribeEvent
 	public static void onBlockBreak(BlockEvent.BreakEvent event) {
 		execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());

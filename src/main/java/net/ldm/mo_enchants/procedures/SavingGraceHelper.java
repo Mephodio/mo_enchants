@@ -25,7 +25,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class SavingGraceHelperProcedure {
+public class SavingGraceHelper {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {

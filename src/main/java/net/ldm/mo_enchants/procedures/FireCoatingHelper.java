@@ -18,7 +18,7 @@ import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class DensityCurseHelperProcedure {
+public class FireCoatingHelper {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {
@@ -33,16 +33,10 @@ public class DensityCurseHelperProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.DENSITY_CURSE.get(),
-				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)) != 0
-				|| EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.DENSITY_CURSE.get(),
-						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)) != 0
-				|| EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.DENSITY_CURSE.get(),
-						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)) != 0
-				|| EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.DENSITY_CURSE.get(),
-						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)) != 0) {
+		if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.FIRE_COATING.get(),
+				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)) != 0) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 0, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2, 0, (false), (false)));
 		}
 	}
 }

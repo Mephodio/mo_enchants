@@ -17,7 +17,7 @@ import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class ToxicAspectHelperProcedure {
+public class FreezingAspectHelper {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {
@@ -32,14 +32,18 @@ public class ToxicAspectHelperProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.VENOMFANG.get(),
+		if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.FREEZING_ASPECT.get(),
 				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 1) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 0, (false), (false)));
-		} else if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.VENOMFANG.get(),
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, (false), (false)));
+		} else if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.FREEZING_ASPECT.get(),
 				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 2) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 150, 1, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 75, 1, (false), (false)));
+		} else if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.FREEZING_ASPECT.get(),
+				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 3) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 115, 2, (false), (false)));
 		}
 	}
 }

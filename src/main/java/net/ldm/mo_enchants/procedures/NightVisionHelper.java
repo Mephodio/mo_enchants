@@ -11,7 +11,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber
-public class NightVisionHelperProcedure {
+public class NightVisionHelper {
 	@SubscribeEvent
 	public static void OnEquipmentChange( LivingEquipmentChangeEvent event ) {
 		if (event.getSlot().equals(EquipmentSlot.HEAD) && EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.NIGHT_VISION.get(), event.getTo()) >= 1 &&

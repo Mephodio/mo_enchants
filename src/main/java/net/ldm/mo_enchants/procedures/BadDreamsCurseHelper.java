@@ -14,7 +14,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 
 @Mod.EventBusSubscriber
-public class BadDreamsCurseHelperProcedure {
+public class BadDreamsCurseHelper {
 	@SubscribeEvent
 	public static void onPlayerInBed(PlayerSleepInBedEvent event) {
 		execute(event.getEntity());

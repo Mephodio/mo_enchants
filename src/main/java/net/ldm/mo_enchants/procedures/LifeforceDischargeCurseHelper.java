@@ -16,7 +16,7 @@ import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class LifeforceDischargeCurseHelperProcedure {
+public class LifeforceDischargeCurseHelper {
 	@SubscribeEvent
 	public static void onEntityAttacked(LivingAttackEvent event) {
 		if (event != null && event.getEntity() != null) {

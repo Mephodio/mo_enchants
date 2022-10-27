@@ -1,7 +1,5 @@
 package net.ldm.mo_enchants.procedures;
 
-import net.minecraft.network.chat.contents.LiteralContents;
-import net.minecraft.network.chat.contents.TranslatableContents;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -30,7 +28,7 @@ import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class BloodthirstHelperProcedure {
+public class BloodthirstHelper {
 	@SubscribeEvent
 	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
 		if (event.getHand() != event.getEntity().getUsedItemHand())

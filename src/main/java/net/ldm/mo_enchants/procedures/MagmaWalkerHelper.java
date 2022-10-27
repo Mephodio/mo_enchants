@@ -21,7 +21,7 @@ import net.ldm.mo_enchants.init.MoEnchantsBlocks;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class MagmaWalkerHelperProcedure {
+public class MagmaWalkerHelper {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {

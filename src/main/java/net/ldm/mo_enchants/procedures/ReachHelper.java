@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import java.util.UUID;
 
 @Mod.EventBusSubscriber
-public class ReachHelperProcedure {
+public class ReachHelper {
 	private static final AttributeModifier reachEnchantmentLv1 = new AttributeModifier(UUID.fromString("9964fc09-999f-47a5-bf38-76f714fb447c"), "reachEnchantmentLv1", 1, AttributeModifier.Operation.ADDITION);
 	private static final AttributeModifier reachEnchantmentLv2 = new AttributeModifier(UUID.fromString("3b027877-2a5d-4ca2-bbbc-1dfff5386c12"), "reachEnchantmentLv2", 2, AttributeModifier.Operation.ADDITION);
 	private static final AttributeModifier reachEnchantmentLv3 = new AttributeModifier(UUID.fromString("cc16cf93-9913-4026-8722-d5232c27bdee"), "reachEnchantmentLv3", 3, AttributeModifier.Operation.ADDITION);

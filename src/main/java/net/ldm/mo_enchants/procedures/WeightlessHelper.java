@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import java.util.UUID;
 
 @Mod.EventBusSubscriber
-public class WeightlessHelperProcedure {
+public class WeightlessHelper {
 	private static final AttributeModifier weightlessEnchantmentLv1 = new AttributeModifier(UUID.fromString("2af7cbaa-5fbe-4e0b-99e0-b73c60da33d7"), "weightlessEnchantmentLv1", -0.01, AttributeModifier.Operation.ADDITION);
 	private static final AttributeModifier weightlessEnchantmentLv2 = new AttributeModifier(UUID.fromString("c5cf8602-c4b3-4a3e-a785-3d9d3ac7b52e"), "weightlessEnchantmentLv2", -0.02, AttributeModifier.Operation.ADDITION);
 

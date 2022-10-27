@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import java.util.UUID;
 
 @Mod.EventBusSubscriber
-public class GrowthHelperProcedure {
+public class GrowthHelper {
 	private static final AttributeModifier growthEnchantmentLv1 = new AttributeModifier(UUID.fromString("4ff57341-51ff-4b44-a528-d667d28e6842"), "growthEnchantmentLv1", 1, AttributeModifier.Operation.ADDITION);
 	private static final AttributeModifier growthEnchantmentLv2 = new AttributeModifier(UUID.fromString("86298a5e-7b75-486d-8aa6-ab7ac453b1ba"), "growthEnchantmentLv2", 2, AttributeModifier.Operation.ADDITION);
 	private static final AttributeModifier growthEnchantmentLv3 = new AttributeModifier(UUID.fromString("9b4b6e29-3c81-45e6-99b0-34d970b06d64"), "growthEnchantmentLv3", 3, AttributeModifier.Operation.ADDITION);
