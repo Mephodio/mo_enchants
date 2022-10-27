@@ -14,17 +14,8 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-
-@Mod.EventBusSubscriber
 public class FreezingCurseHelper {
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
-		}
-	}
-
-	private static void execute(LevelAccessor world, BlockPos pos, Player entity) {
+	public static void execute(LevelAccessor world, BlockPos pos, Player entity) {
 		if (entity == null)
 			return;
 		Holder<Biome> biome = world.getBiome(pos);

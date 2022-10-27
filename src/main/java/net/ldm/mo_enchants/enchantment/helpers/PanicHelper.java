@@ -15,16 +15,8 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber
 public class PanicHelper {
-	@SubscribeEvent
-	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
-		if (event.phase == TickEvent.Phase.END) {
-			execute(event.player.level, event.player);
-		}
-	}
-	
-	private static void execute(LevelAccessor world, Player entity) {
+	public static void execute(LevelAccessor world, Player entity) {
 		if (entity == null)
 			return;
 		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.PANIC.get(), (entity.getItemBySlot(EquipmentSlot.FEET))) >= 1 && entity.getHealth() < 4) {

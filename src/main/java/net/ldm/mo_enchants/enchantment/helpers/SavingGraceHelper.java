@@ -24,13 +24,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
 public class SavingGraceHelper {
 	public static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity.level.dimension()) == (Level.OVERWORLD)) {
-			if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.SAVING_GRACE.get(),
+			if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.SAVING_GRACE.get(),
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)) != 0
 					&& entity.getY() < -75) {
 				entity.setDeltaMovement(new Vec3(0, 5, 0));

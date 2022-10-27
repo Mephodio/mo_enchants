@@ -1,9 +1,11 @@
 package net.ldm.mo_enchants.event;
 
+import net.ldm.mo_enchants.enchantment.RockMendingEnchantment;
 import net.ldm.mo_enchants.enchantment.helpers.*;
 import net.minecraft.core.BlockPos;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
@@ -19,6 +21,13 @@ public class EventHandler {
             AngelsBlessingHelper.execute(event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getAmount());
             ConductionHelper.execute(event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource().getEntity());
             FreezingAspectHelper.execute(event.getEntity(), event.getSource().getEntity());
+            FrostHelper.execute(event, event.getEntity(), event.getSource().getEntity());
+            HarmingCurseHelper.execute(event, event.getSource().getEntity());
+            LevitatingHelper.execute(event.getEntity(), event.getSource().getEntity());
+            LifeforceDischargeCurseHelper.execute(event, event.getEntity(), event.getSource().getEntity());
+            LifeStealHelper.execute(event, event.getSource().getEntity());
+            RevenantHelper.execute(event, event.getEntity(), event.getSource().getEntity());
+            ScorchingCurseHelper.execute(event, event.getEntity());
         }
     }
 
@@ -26,9 +35,12 @@ public class EventHandler {
     public static void onPlayerTick( TickEvent.PlayerTickEvent event) {
         if (event.phase == TickEvent.Phase.END) {
             AquaphobiaCurseHelper.execute(event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
-            SavingGraceHelper.execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
             BoilingCurseHelper.execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
             DensityCurseHelper.execute(event.player);
+            FreezingCurseHelper.execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
+            MagmaWalkerHelper.execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
+            PanicHelper.execute(event.player.level, event.player);
+            SavingGraceHelper.execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
         }
     }
 
@@ -47,6 +59,8 @@ public class EventHandler {
     @SubscribeEvent
     public static void onBlockBreak( BlockEvent.BreakEvent event) {
         CarefulEnchantmentHelper.execute(event);
+        RockMendingHelper.execute(event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
+        SmeltingTouchHelper.execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getPlayer());
     }
 
     @SubscribeEvent
@@ -54,5 +68,12 @@ public class EventHandler {
         if (event != null && event.getEntity() != null) {
             DetonationHelper.execute(event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource().getEntity());
         }
+    }
+
+    @SubscribeEvent
+    public static void onEquipmentChange(LivingEquipmentChangeEvent event) {
+        GrowthHelper.execute(event);
+        NightVisionHelper.execute(event);
+        ReachHelper.execute(event);
     }
 }
