@@ -12,7 +12,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber
 public class BoilingCurseHelper {
 	public static void execute( LevelAccessor world, BlockPos pos, Player entity ) {
 		if (entity == null)

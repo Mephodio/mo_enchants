@@ -27,7 +27,6 @@ import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
 public class BloodthirstHelper {
 	public static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)

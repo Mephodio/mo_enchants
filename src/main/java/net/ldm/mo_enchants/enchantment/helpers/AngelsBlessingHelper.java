@@ -14,12 +14,10 @@ import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Map;
 
-@Mod.EventBusSubscriber
 public class AngelsBlessingHelper {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, double amount) {
 		if (entity == null)

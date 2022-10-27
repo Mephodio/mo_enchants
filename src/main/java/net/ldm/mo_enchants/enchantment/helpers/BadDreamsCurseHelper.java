@@ -13,7 +13,6 @@ import net.minecraft.world.damagesource.DamageSource;
 
 import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 
-@Mod.EventBusSubscriber
 public class BadDreamsCurseHelper {
 	public static void execute(Entity entity) {
 		if (entity == null)
