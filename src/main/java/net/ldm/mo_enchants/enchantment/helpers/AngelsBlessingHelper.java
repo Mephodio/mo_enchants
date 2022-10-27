@@ -1,6 +1,7 @@
 package net.ldm.mo_enchants.enchantment.helpers;
 
 import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
@@ -34,7 +35,7 @@ public class AngelsBlessingHelper {
 					livingEntity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100, 1));
 					livingEntity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 800, 0));
 				}
-				TotemlikeAnimationMainhandProcedure.execute(world, entity);
+				totemAnimation(world, entity, false);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.totem.use")),
@@ -80,7 +81,7 @@ public class AngelsBlessingHelper {
 					livingEntity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100, 1));
 					livingEntity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 800, 0));
 				}
-				TotemlikeAnimationOffhandProcedure.execute(world, entity);
+				totemAnimation(world, entity, true);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.totem.use")),
@@ -118,5 +119,14 @@ public class AngelsBlessingHelper {
 				}
 			}
 		}
+	}
+
+	private static void totemAnimation(LevelAccessor world, Entity entity, boolean getFromOffHand) {
+		if (entity == null) return;
+		if (world.isClientSide())
+			if (getFromOffHand)
+				Minecraft.getInstance().gameRenderer.displayItemActivation((entity instanceof LivingEntity livingEntity ? livingEntity.getOffhandItem() : ItemStack.EMPTY));
+			else
+				Minecraft.getInstance().gameRenderer.displayItemActivation((entity instanceof LivingEntity livingEntity ? livingEntity.getMainHandItem() : ItemStack.EMPTY));
 	}
 }
