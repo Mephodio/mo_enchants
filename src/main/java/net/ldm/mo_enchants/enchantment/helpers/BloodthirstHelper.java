@@ -71,7 +71,7 @@ public class BloodthirstHelper {
 			}.start(240);
 		} else {
 			if (entity instanceof Player player && !player.level.isClientSide())
-				player.displayClientMessage(Component.translatable("cooldown.input", Component.literal("Bloodthirst")), true);
+				player.displayClientMessage(Component.translatable("cooldown.input", Component.translatable("enchantment.mo_enchants.bloodthirst")), true);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")),
