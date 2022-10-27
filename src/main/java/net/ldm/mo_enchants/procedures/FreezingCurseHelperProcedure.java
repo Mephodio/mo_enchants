@@ -28,7 +28,6 @@ public class FreezingCurseHelperProcedure {
 		if (entity == null)
 			return;
 		Holder<Biome> biome = world.getBiome(pos);
-		System.out.println(EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(), entity.getItemBySlot(EquipmentSlot.HEAD)));
 		if (biome.is(BiomeTags.IS_FROZEN)
 				&& (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(), entity.getItemBySlot(EquipmentSlot.HEAD)) >= 1)
 				|| (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FREEZING_CURSE.get(), entity.getItemBySlot(EquipmentSlot.CHEST)) >= 1)
