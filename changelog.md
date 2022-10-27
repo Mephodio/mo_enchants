@@ -16,5 +16,7 @@
 - Fixed: Swiftness III wouldn’t do anything
 - Fixed: Growth III wouldn’t do anything
 - Fixed: Growth III would give you permanent hearts
+- Fixed: Panic would make you invincible (now has cooldown)
 - Optimized: Switched Curse of Freezing and Curse of Boiling to use biome tags
 - Optimized: Panic enchantment
+- Optimized: Event handler (events are called only once for this mod, and should reduce lag on slower devices)
