@@ -11,7 +11,7 @@ import javax.annotation.Nullable;
 
 public class CarefulEnchantmentHelper {
     public static void execute(@Nullable BlockEvent.BreakEvent event) {
-        if (EnchantmentHelper.getEnchantmentLevel(MoEnchantsEnchantments.CAREFUL.get(), event.getPlayer()) >= 1 &&
+        if (event != null && EnchantmentHelper.getEnchantmentLevel(MoEnchantsEnchantments.CAREFUL.get(), event.getPlayer()) >= 1 &&
                 event.getState().is(BlockTags.create(new ResourceLocation("mo_enchants", "ungrown_crops"))) &&
                 event.getState().getBlock() instanceof CropBlock && event.getState().getValue(CropBlock.AGE) <= 6) {
             event.setCanceled(true);

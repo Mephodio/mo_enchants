@@ -5,9 +5,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.UUID;
 
@@ -17,7 +14,7 @@ public class GrowthHelper {
 	private static final AttributeModifier growthEnchantmentLv3 = new AttributeModifier(UUID.fromString("9b4b6e29-3c81-45e6-99b0-34d970b06d64"), "growthEnchantmentLv3", 3, AttributeModifier.Operation.ADDITION);
 	private static final AttributeModifier growthEnchantmentLv4 = new AttributeModifier(UUID.fromString("f77f759c-f31d-45ae-a877-395ad1ebc44b"), "growthEnchantmentLv4", 4, AttributeModifier.Operation.ADDITION);
 
-	public static void execute(@Nullable LivingEquipmentChangeEvent event) {
+	public static void execute(LivingEquipmentChangeEvent event) {
 		if (event.getSlot().equals(EquipmentSlot.HEAD) || event.getSlot().equals(EquipmentSlot.CHEST) ||
 				event.getSlot().equals(EquipmentSlot.LEGS) || event.getSlot().equals(EquipmentSlot.FEET)) {
 			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(Attributes.MAX_HEALTH);

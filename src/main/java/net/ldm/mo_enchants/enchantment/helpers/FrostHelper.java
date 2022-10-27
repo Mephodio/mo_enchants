@@ -7,24 +7,21 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
 
 public class FrostHelper {
-	public static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
-		if (entity == null || sourceentity == null)
+	public static void execute( Entity entity, Entity sourceEntity) {
+		if (entity == null || sourceEntity == null)
 			return;
 		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FROST.get(),
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 1) {
+				(sourceEntity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 1) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 40, 0, (false), (false)));
 		} else if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FROST.get(),
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 2) {
+				(sourceEntity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 2) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 75, 1, (false), (false)));
 		} else if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.FROST.get(),
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 3) {
+				(sourceEntity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) == 3) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 115, 2, (false), (false)));
 		}

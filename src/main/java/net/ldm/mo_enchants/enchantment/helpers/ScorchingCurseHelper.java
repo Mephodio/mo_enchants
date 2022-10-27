@@ -6,12 +6,9 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
 
 public class ScorchingCurseHelper {
-	public static void execute(@Nullable Event event, Entity entity) {
+	public static void execute( Entity entity) {
 		if (entity == null)
 			return;
 		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.SCORCHING_CURSE.get(),

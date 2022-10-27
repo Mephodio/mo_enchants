@@ -16,16 +16,10 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 
-import javax.annotation.Nullable;
-
 public class SavingGraceHelper {
-	public static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute( LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity.level.dimension()) == (Level.OVERWORLD)) {
@@ -58,7 +52,7 @@ public class SavingGraceHelper {
 					_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 200, 0, (false), (false)));
 			}
 		} else {
-			if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.SAVING_GRACE.get(),
+			if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.SAVING_GRACE.get(),
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)) != 0
 					&& entity.getY() < -11) {
 				entity.setDeltaMovement(new Vec3(0, 5, 0));

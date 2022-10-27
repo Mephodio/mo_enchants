@@ -8,9 +8,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
 
 public class DensityCurseHelper {
 	public static void execute( Entity entity ) {

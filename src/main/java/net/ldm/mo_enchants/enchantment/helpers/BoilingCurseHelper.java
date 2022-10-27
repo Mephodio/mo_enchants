@@ -10,7 +10,6 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraftforge.fml.common.Mod;
 
 public class BoilingCurseHelper {
 	public static void execute( LevelAccessor world, BlockPos pos, Player entity ) {

@@ -10,12 +10,9 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
 
 public class UltimateFinishHelper {
-	public static void execute( @Nullable Event event, LevelAccessor world, double x, double y, double z, Entity sourceentity ) {
+	public static void execute( LevelAccessor world, double x, double y, double z, Entity sourceentity ) {
 		if (sourceentity == null)
 			return;
 		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.ULTIMATE_FINISH.get(),

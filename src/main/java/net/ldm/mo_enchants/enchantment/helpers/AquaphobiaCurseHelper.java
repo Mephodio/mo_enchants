@@ -13,15 +13,11 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-
-import javax.annotation.Nullable;
 
 public class AquaphobiaCurseHelper {
 	public static void execute( LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
-			return;
+		if (entity == null) return;
 		if (((world.getBlockState(new BlockPos(x, y, z))).getBlock() instanceof LiquidBlock _liquid
 				? new ItemStack(_liquid.getFluid().getBucket())
 				: ItemStack.EMPTY).getItem() == Items.WATER_BUCKET
@@ -45,12 +41,10 @@ public class AquaphobiaCurseHelper {
 				new Object() {
 					private int ticks = 0;
 					private float waitTicks;
-					private LevelAccessor world;
 
-					public void start(LevelAccessor world, int waitTicks) {
+					public void start(int waitTicks) {
 						this.waitTicks = waitTicks;
 						MinecraftForge.EVENT_BUS.register(this);
-						this.world = world;
 					}
 
 					@SubscribeEvent
@@ -66,7 +60,7 @@ public class AquaphobiaCurseHelper {
 						entity.getPersistentData().putBoolean("aquaphobiaDamageCooldown", (false));
 						MinecraftForge.EVENT_BUS.unregister(this);
 					}
-				}.start(world, 10);
+				}.start(10);
 			}
 		}
 	}
