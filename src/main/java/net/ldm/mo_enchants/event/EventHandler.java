@@ -37,6 +37,7 @@ public class EventHandler {
             AquaphobiaCurseHelper.execute(event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
             BoilingCurseHelper.execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
             DensityCurseHelper.execute(event.player);
+            FireCoatingHelper.execute(event.player);
             FreezingCurseHelper.execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
             MagmaWalkerHelper.execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
             PanicHelper.execute(event.player.level, event.player);
@@ -53,7 +54,7 @@ public class EventHandler {
     public static void onRightClickItem( PlayerInteractEvent.RightClickItem event) {
         if (event.getHand() != event.getEntity().getUsedItemHand())
             return;
-        BloodthirstHelper.execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
+        BloodthirstHelper.execute(event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
     }
 
     @SubscribeEvent
