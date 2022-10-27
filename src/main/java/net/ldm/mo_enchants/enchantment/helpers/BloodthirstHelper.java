@@ -22,66 +22,65 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class BloodthirstHelper {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-		if (entity == null)
-			return;
-		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(),
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
-			if (!entity.getPersistentData().getBoolean("bloodthirstAbilityCooldown")) {
-				if (entity instanceof LivingEntity _entity)
-					_entity.hurt(new DamageSource("enchantment.bloodthirst").bypassArmor(), 5);
-				entity.getPersistentData().putBoolean("bloodthirstAbilityCooldown", (true));
-				if (entity instanceof LivingEntity _entity) {
-					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 240,
-							(int) (-1 + EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(),
-									_entity.getMainHandItem()))));
+		if (entity == null) return;
+		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(), (entity instanceof LivingEntity livingEntity ? livingEntity.getMainHandItem() : ItemStack.EMPTY)) <= 0) return;
+
+		if (!entity.getPersistentData().getBoolean("bloodthirstAbilityCooldown")) {
+			if (entity instanceof LivingEntity livingEntity)
+				livingEntity.hurt(new DamageSource("enchantment.bloodthirst").bypassArmor(), 5);
+
+			entity.getPersistentData().putBoolean("bloodthirstAbilityCooldown", true);
+
+			// if not on cooldown - starts here
+			if (entity instanceof LivingEntity livingEntity) {
+				livingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 240, EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(), livingEntity.getMainHandItem())));
+				livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 0));
+			}
+
+			if (world instanceof Level level) {
+				if (!level.isClientSide()) {
+					level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.knockback")),
+							SoundSource.PLAYERS, 1, 0.8f);
+				} else {
+					level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.knockback")),
+							SoundSource.PLAYERS, 1, 0.8f, false);
 				}
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 0));
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.knockback")), SoundSource.PLAYERS, 1,
-								(float) 0.8);
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.knockback")),
-								SoundSource.PLAYERS, 1, (float) 0.8, false);
+			}
+			// if not on cooldown - ends here
+
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+
+				public void start(int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
 					}
 				}
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
 
-					public void start(int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-					}
-
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
-						}
-					}
-
-					private void run() {
-						entity.getPersistentData().putBoolean("bloodthirstAbilityCooldown", (false));
-						MinecraftForge.EVENT_BUS.unregister(this);
-					}
-				}.start(240);
-			} else {
-				if (entity instanceof Player _player && !_player.level.isClientSide())
-					_player.displayClientMessage(Component.translatable("cooldown.generic"), true);
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")), SoundSource.PLAYERS, 1,
-								(float) 0.5);
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")),
-								SoundSource.PLAYERS, 1, (float) 0.5, false);
-					}
+				private void run() {
+					entity.getPersistentData().putBoolean("bloodthirstAbilityCooldown", false);
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(240);
+		} else {
+			if (entity instanceof Player player && !player.level.isClientSide())
+				player.displayClientMessage(Component.translatable("cooldown.input", Component.literal("Bloodthirst")), true);
+			if (world instanceof Level _level) {
+				if (!_level.isClientSide()) {
+					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")),
+							SoundSource.PLAYERS, 1, 0.5f);
+				} else {
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")),
+							SoundSource.PLAYERS, 1, 0.5f, false);
 				}
 			}
 		}
