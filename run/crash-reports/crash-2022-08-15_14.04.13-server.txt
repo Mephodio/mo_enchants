@@ -7,7 +7,7 @@ Description: Ticking player
 java.lang.IllegalArgumentException: Modifier is already applied on this attribute!
 	at net.minecraft.world.entity.ai.attributes.AttributeInstance.addModifier(AttributeInstance.java:72) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
 	at net.minecraft.world.entity.ai.attributes.AttributeInstance.addPermanentModifier(AttributeInstance.java:84) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
-	at net.ldm.mo_enchants.procedures.GrowthHelper.onEquipmentChange(GrowthHelperProcedure.java:32) ~[%2380!/:?] {re:classloading}
+	at net.ldm.mo_enchants.helpers.GrowthHelper.onEquipmentChange(GrowthHelperProcedure.java:32) ~[%2380!/:?] {re:classloading}
 	at net.minecraftforge.eventbus.ASMEventHandler_35_GrowthHelperProcedure_onEquipmentChange_LivingEquipmentChangeEvent.invoke(.dynamic) ~[?:?] {}
 	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-5.0.7.jar%239!/:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-5.0.7.jar%239!/:?] {}
@@ -36,7 +36,7 @@ Thread: Server thread
 Stacktrace:
 	at net.minecraft.world.entity.ai.attributes.AttributeInstance.addModifier(AttributeInstance.java:72) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
 	at net.minecraft.world.entity.ai.attributes.AttributeInstance.addPermanentModifier(AttributeInstance.java:84) ~[forge-1.18.2-40.1.0_mapped_official_1.18.2-recomp.jar%2376!/:?] {re:classloading}
-	at net.ldm.mo_enchants.procedures.GrowthHelper.onEquipmentChange(GrowthHelperProcedure.java:32) ~[%2380!/:?] {re:classloading}
+	at net.ldm.mo_enchants.helpers.GrowthHelper.onEquipmentChange(GrowthHelperProcedure.java:32) ~[%2380!/:?] {re:classloading}
 	at net.minecraftforge.eventbus.ASMEventHandler_35_GrowthHelperProcedure_onEquipmentChange_LivingEquipmentChangeEvent.invoke(.dynamic) ~[?:?] {}
 	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-5.0.7.jar%239!/:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-5.0.7.jar%239!/:?] {}

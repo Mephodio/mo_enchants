@@ -1,8 +1,8 @@
 
 package net.ldm.mo_enchants.block;
 
-import net.ldm.mo_enchants.procedures.LiquefyingMagmaBlockAddedProcedure;
-import net.ldm.mo_enchants.procedures.LiquefyingMagmaBlockDestroyedProcedure;
+import net.ldm.mo_enchants.helpers.LiquefyingMagmaBlockAddedProcedure;
+import net.ldm.mo_enchants.helpers.LiquefyingMagmaBlockDestroyedProcedure;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;

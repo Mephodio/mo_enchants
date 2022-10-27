@@ -41,10 +41,10 @@ Stacktrace:
 Details:
 	Mod File: main
 	Failure message: Mo' Enchants (mo_enchants) has failed to load correctly
-		java.lang.IllegalArgumentException: Method public static void net.ldm.mo_enchants.procedures.GrowthHelper.onEquipmentChange(net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent,net.minecraft.world.entity.LivingEntity,net.minecraft.world.item.ItemStack) has @SubscribeEvent annotation. It has 3 arguments, but event handler methods require a single argument only.
+		java.lang.IllegalArgumentException: Method public static void net.ldm.mo_enchants.helpers.GrowthHelper.onEquipmentChange(net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent,net.minecraft.world.entity.LivingEntity,net.minecraft.world.item.ItemStack) has @SubscribeEvent annotation. It has 3 arguments, but event handler methods require a single argument only.
 	Mod Version: 1.4.11.18.2
 	Mod Issue URL: NOT PROVIDED
-	Exception message: java.lang.IllegalArgumentException: Method public static void net.ldm.mo_enchants.procedures.GrowthHelper.onEquipmentChange(net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent,net.minecraft.world.entity.LivingEntity,net.minecraft.world.item.ItemStack) has @SubscribeEvent annotation. It has 3 arguments, but event handler methods require a single argument only.
+	Exception message: java.lang.IllegalArgumentException: Method public static void net.ldm.mo_enchants.helpers.GrowthHelper.onEquipmentChange(net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent,net.minecraft.world.entity.LivingEntity,net.minecraft.world.item.ItemStack) has @SubscribeEvent annotation. It has 3 arguments, but event handler methods require a single argument only.
 Stacktrace:
 	at net.minecraftforge.eventbus.EventBus.registerListener(EventBus.java:128) ~[eventbus-5.0.7.jar%239!/:?] {}
 	at net.minecraftforge.eventbus.EventBus.lambda$registerClass$2(EventBus.java:78) ~[eventbus-5.0.7.jar%239!/:?] {}
