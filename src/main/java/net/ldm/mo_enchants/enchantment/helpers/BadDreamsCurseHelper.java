@@ -15,15 +15,10 @@ import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
 
 @Mod.EventBusSubscriber
 public class BadDreamsCurseHelper {
-	@SubscribeEvent
-	public static void onPlayerInBed(PlayerSleepInBedEvent event) {
-		execute(event.getEntity());
-	}
-
-	private static void execute(Entity entity) {
+	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (EnchantmentHelper.getItemEnchantmentLevel(MoEnchantsEnchantments.BAD_DREAMS_CURSE.get(),
+		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BAD_DREAMS_CURSE.get(),
 				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)) != 0) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.hurt(new DamageSource("curse.bad_dreams").bypassArmor(), 100);

@@ -1,8 +1,11 @@
 package net.ldm.mo_enchants.event;
 
 import net.ldm.mo_enchants.enchantment.helpers.*;
+import net.minecraft.core.BlockPos;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
+import net.minecraftforge.event.entity.player.PlayerSleepInBedEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class Events {
@@ -16,7 +19,21 @@ public class Events {
     @SubscribeEvent
     public static void onPlayerTick( TickEvent.PlayerTickEvent event) {
         if (event.phase == TickEvent.Phase.END) {
+            AquaphobiaCurseHelper.execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
             SavingGraceHelper.execute(event, event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
+            BoilingCurseHelper.execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
         }
+    }
+
+    @SubscribeEvent
+    public static void onPlayerInBed( PlayerSleepInBedEvent event) {
+        BadDreamsCurseHelper.execute(event.getEntity());
+    }
+
+    @SubscribeEvent
+    public static void onRightClickItem( PlayerInteractEvent.RightClickItem event) {
+        if (event.getHand() != event.getEntity().getUsedItemHand())
+            return;
+        BloodthirstHelper.execute(event, event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
     }
 }
