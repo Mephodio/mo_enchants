@@ -1,6 +1,7 @@
 {
   "block.mo_enchants.liquefying_magma_block": "Liquefying Magma Block",
   "cooldown.generic": "§cThis ability is on cooldown!",
+  "cooldown.input": "§c%1$s is on cooldown!",
   "death.attack.curse.aquaphobia": "%1$s forgot they were aquaphobic",
   "death.attack.curse.aquaphobia.player": "%1$s forgot they were aquaphobic and tried to escape %2$s",
   "death.attack.curse.bad_dreams": "%1$s had a bad dream",
