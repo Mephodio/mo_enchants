@@ -26,13 +26,11 @@ public class BloodthirstHelper {
 		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(), (entity instanceof LivingEntity livingEntity ? livingEntity.getMainHandItem() : ItemStack.EMPTY)) <= 0) return;
 
 		if (!entity.getPersistentData().getBoolean("bloodthirstAbilityCooldown")) {
-			if (entity instanceof LivingEntity livingEntity)
-				livingEntity.hurt(new DamageSource("enchantment.bloodthirst").bypassArmor(), 5);
-
 			entity.getPersistentData().putBoolean("bloodthirstAbilityCooldown", true);
 
 			// if not on cooldown - starts here
 			if (entity instanceof LivingEntity livingEntity) {
+				livingEntity.hurt(new DamageSource("enchantment.bloodthirst").bypassArmor(), 5);
 				livingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 240, EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(), livingEntity.getMainHandItem())));
 				livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 0));
 			}
