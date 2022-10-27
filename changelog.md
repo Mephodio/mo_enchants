@@ -17,3 +17,4 @@
 - Fixed: Growth III wouldn’t do anything
 - Fixed: Growth III would give you permanent hearts
 - Optimized: Switched Curse of Freezing and Curse of Boiling to use biome tags
+- Optimized: Panic enchantment
