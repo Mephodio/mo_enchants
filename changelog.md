@@ -19,6 +19,7 @@
 - Optimized: Switched Curse of Freezing and Curse of Boiling to use biome tags
 - Optimized: Panic enchantment
 - Optimized: Event handler (events are called only once for this mod, and should reduce lag on slower devices)
+- Optimized: Angel's Blessing enchantment
 
 ### Mo' Enchants v1.6 (1.19.2)
 - Added: Telekinesis enchantment; puts dropped items directly in your inventory, instead of the ground. (Thanks @GGGamesXDlol#7940 on Discord for this suggestion!)
