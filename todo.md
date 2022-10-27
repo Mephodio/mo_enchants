@@ -8,8 +8,9 @@
 - ✅ Remove all `MCreator` traces (e.g. comments)
 - ✅ Optimize `init` classes
 - Put cooldown on `Panic` enchantment (8s for I, 5s, for II, maybe)
-- Remove unnecessary `@Nullable Event` parameter
+- ✅ Remove unnecessary `@Nullable Event` parameter
 
 ### v1.6
 - Add @bcat's `Reeling` enchantment
 - Add @GGGamesXDlol's `Telekinesis` enchantment
+- Add `Replenish` enchantment (see `changelog.md`)

@@ -11,7 +11,6 @@
 - Added: First Strike enchantment; does 25% more damage on first strike
 - Added: Devastation enchantment; adds a 10% × level chance of doing 150% damage
 - Added: Careful enchantment; prevents you from mining crops that aren’t fully grown
-- Added: Replenish enchantment; automatically re-plants crops, if you have the seed in your inventory.
 - Fixed: Swiftness III wouldn’t do anything
 - Fixed: Growth III wouldn’t do anything
 - Fixed: Growth III would give you permanent hearts
@@ -22,5 +21,6 @@
 - Optimized: Angel's Blessing enchantment
 
 ### Mo' Enchants v1.6 (1.19.2)
-- Added: Telekinesis enchantment; puts dropped items directly in your inventory, instead of the ground. (Thanks @GGGamesXDlol#7940 on Discord for this suggestion!)
-- Added: Reeling enchantment; on right-click, reel in the closest mob. (Thanks @bcat#2616 on Discord for this suggestion!)
+- Added: Telekinesis enchantment; puts dropped items directly in your inventory, instead of the ground. (Thanks `@GGGamesXDlol#7940` on Discord for this suggestion!)
+- Added: Reeling enchantment; on right-click, reel in the closest mob. (Thanks `@bcat#2616` on Discord for this suggestion!)
+- Added: Replenish enchantment; automatically re-plants crops, if you have the seed in your inventory.
