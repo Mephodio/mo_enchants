@@ -225,7 +225,7 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) [?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) [?:?]
 [26Oct.2022 20:18:48.713] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Bits.unaligned: available, true
-[26Oct.2022 20:18:48.714] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.AngelsBlessingHelperProcedure to FORGE
+[26Oct.2022 20:18:48.714] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.AngelsBlessingHelper to FORGE
 [26Oct.2022 20:18:48.714] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
 java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 (in module io.netty.common) cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to module io.netty.common
 	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
@@ -265,41 +265,41 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 [26Oct.2022 20:18:48.717] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
 [26Oct.2022 20:18:48.718] [modloading-worker-0/DEBUG] [io.netty.util.internal.CleanerJava9/]: java.nio.ByteBuffer.cleaner(): available
 [26Oct.2022 20:18:48.718] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.noPreferDirect: false
-[26Oct.2022 20:18:48.719] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.AquaphobiaCurseHelperProcedure to FORGE
-[26Oct.2022 20:18:48.723] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.BadDreamsCurseHelperProcedure to FORGE
-[26Oct.2022 20:18:48.726] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.BloodthirstHelperProcedure to FORGE
-[26Oct.2022 20:18:48.728] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.BoilingCurseHelperProcedure to FORGE
+[26Oct.2022 20:18:48.719] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.AquaphobiaCurseHelper to FORGE
+[26Oct.2022 20:18:48.723] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.BadDreamsCurseHelper to FORGE
+[26Oct.2022 20:18:48.726] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.BloodthirstHelper to FORGE
+[26Oct.2022 20:18:48.728] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.BoilingCurseHelper to FORGE
 [26Oct.2022 20:18:48.730] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.BonusDamageEnchantmentHelper to FORGE
 [26Oct.2022 20:18:48.732] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.CarefulEnchantmentHelper to FORGE
-[26Oct.2022 20:18:48.735] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.ConductionHelperProcedure to FORGE
-[26Oct.2022 20:18:48.738] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.CurseOfHarmingHelperProcedure to FORGE
-[26Oct.2022 20:18:48.740] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.CurseOfScorchingHelperProcedure to FORGE
-[26Oct.2022 20:18:48.757] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.DensityCurseHelperProcedure to FORGE
-[26Oct.2022 20:18:48.761] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.DetonationHelperProcedure to FORGE
-[26Oct.2022 20:18:48.767] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.FireCoatingHelperProcedure to FORGE
+[26Oct.2022 20:18:48.735] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.ConductionHelper to FORGE
+[26Oct.2022 20:18:48.738] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.HarmingCurseHelper to FORGE
+[26Oct.2022 20:18:48.740] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.ScorchingCurseHelper to FORGE
+[26Oct.2022 20:18:48.757] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.DensityCurseHelper to FORGE
+[26Oct.2022 20:18:48.761] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.DetonationHelper to FORGE
+[26Oct.2022 20:18:48.767] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.FireCoatingHelper to FORGE
 [26Oct.2022 20:18:48.769] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Loading Network data for FML net version: FML3
-[26Oct.2022 20:18:48.769] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.FreezingAspectHelperProcedure to FORGE
-[26Oct.2022 20:18:48.777] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.FreezingCurseHelperProcedure to FORGE
-[26Oct.2022 20:18:48.784] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.FrostHelperProcedure to FORGE
-[26Oct.2022 20:18:48.787] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.GrowthHelperProcedure to FORGE
+[26Oct.2022 20:18:48.769] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.FreezingAspectHelper to FORGE
+[26Oct.2022 20:18:48.777] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.FreezingCurseHelper to FORGE
+[26Oct.2022 20:18:48.784] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.FrostHelper to FORGE
+[26Oct.2022 20:18:48.787] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.GrowthHelper to FORGE
 [26Oct.2022 20:18:48.788] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-client.toml for forge tracking
 [26Oct.2022 20:18:48.788] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-server.toml for forge tracking
 [26Oct.2022 20:18:48.788] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-common.toml for forge tracking
-[26Oct.2022 20:18:48.792] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.LevitatingHelperProcedure to FORGE
-[26Oct.2022 20:18:48.796] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.LifeforceDischargeCurseHelperProcedure to FORGE
-[26Oct.2022 20:18:48.798] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.LifeStealHelperProcedure to FORGE
-[26Oct.2022 20:18:48.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.MagmaWalkerHelperProcedure to FORGE
-[26Oct.2022 20:18:48.806] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.NightVisionHelperProcedure to FORGE
+[26Oct.2022 20:18:48.792] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.LevitatingHelper to FORGE
+[26Oct.2022 20:18:48.796] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.LifeforceDischargeCurseHelper to FORGE
+[26Oct.2022 20:18:48.798] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.LifeStealHelper to FORGE
+[26Oct.2022 20:18:48.801] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.MagmaWalkerHelper to FORGE
+[26Oct.2022 20:18:48.806] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.NightVisionHelper to FORGE
 [26Oct.2022 20:18:48.850] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.PanicHelperProcedure to FORGE
-[26Oct.2022 20:18:48.865] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.ReachHelperProcedure to FORGE
-[26Oct.2022 20:18:48.872] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.RevenantHelperProcedure to FORGE
-[26Oct.2022 20:18:48.876] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.RockMendingHelperProcedure to FORGE
-[26Oct.2022 20:18:48.915] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.SavingGraceHelperProcedure to FORGE
-[26Oct.2022 20:18:48.929] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.SmeltingTouchHelperProcedure to FORGE
+[26Oct.2022 20:18:48.865] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.ReachHelper to FORGE
+[26Oct.2022 20:18:48.872] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.RevenantHelper to FORGE
+[26Oct.2022 20:18:48.876] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.RockMendingHelper to FORGE
+[26Oct.2022 20:18:48.915] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.SavingGraceHelper to FORGE
+[26Oct.2022 20:18:48.929] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.SmeltingTouchHelper to FORGE
 [26Oct.2022 20:18:48.932] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.SwiftnessHelper to FORGE
-[26Oct.2022 20:18:48.935] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.ToxicAspectHelperProcedure to FORGE
-[26Oct.2022 20:18:48.938] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.UltimateFinishHelperProcedure to FORGE
-[26Oct.2022 20:18:48.941] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.WeightlessHelperProcedure to FORGE
+[26Oct.2022 20:18:48.935] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.ToxicAspectHelper to FORGE
+[26Oct.2022 20:18:48.938] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.UltimateFinishHelper to FORGE
+[26Oct.2022 20:18:48.941] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ldm.mo_enchants.procedures.WeightlessHelper to FORGE
 [26Oct.2022 20:18:48.961] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for forge
 [26Oct.2022 20:18:48.961] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$CommonHandler to MOD
 [26Oct.2022 20:18:48.965] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$ColorRegisterHandler to MOD

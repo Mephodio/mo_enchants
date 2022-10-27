@@ -5,8 +5,8 @@ Time: 8/13/22, 7:03 PM
 Description: Ticking entity
 
 java.lang.ClassCastException: class net.minecraft.world.entity.monster.Skeleton cannot be cast to class java.util.function.Consumer (net.minecraft.world.entity.monster.Skeleton is in module minecraft@1.18.2 of loader 'TRANSFORMER' @858d8b4; java.util.function.Consumer is in module java.base of loader 'bootstrap')
-	at net.ldm.mo_enchants.procedures.GrowthHelperProcedure.execute(GrowthHelperProcedure.java:29) ~[%2380!/:?] {re:classloading}
-	at net.ldm.mo_enchants.procedures.GrowthHelperProcedure.onEquipmentChange(GrowthHelperProcedure.java:25) ~[%2380!/:?] {re:classloading}
+	at net.ldm.mo_enchants.procedures.GrowthHelper.execute(GrowthHelperProcedure.java:29) ~[%2380!/:?] {re:classloading}
+	at net.ldm.mo_enchants.procedures.GrowthHelper.onEquipmentChange(GrowthHelperProcedure.java:25) ~[%2380!/:?] {re:classloading}
 	at net.minecraftforge.eventbus.ASMEventHandler_35_GrowthHelperProcedure_onEquipmentChange_LivingEquipmentChangeEvent.invoke(.dynamic) ~[?:?] {}
 	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-5.0.7.jar%239!/:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-5.0.7.jar%239!/:?] {}
@@ -35,8 +35,8 @@ A detailed walkthrough of the error, its code path and all known details is as f
 -- Head --
 Thread: Server thread
 Stacktrace:
-	at net.ldm.mo_enchants.procedures.GrowthHelperProcedure.execute(GrowthHelperProcedure.java:29) ~[%2380!/:?] {re:classloading}
-	at net.ldm.mo_enchants.procedures.GrowthHelperProcedure.onEquipmentChange(GrowthHelperProcedure.java:25) ~[%2380!/:?] {re:classloading}
+	at net.ldm.mo_enchants.procedures.GrowthHelper.execute(GrowthHelperProcedure.java:29) ~[%2380!/:?] {re:classloading}
+	at net.ldm.mo_enchants.procedures.GrowthHelper.onEquipmentChange(GrowthHelperProcedure.java:25) ~[%2380!/:?] {re:classloading}
 	at net.minecraftforge.eventbus.ASMEventHandler_35_GrowthHelperProcedure_onEquipmentChange_LivingEquipmentChangeEvent.invoke(.dynamic) ~[?:?] {}
 	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-5.0.7.jar%239!/:?] {}
 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-5.0.7.jar%239!/:?] {}
