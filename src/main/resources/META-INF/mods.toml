@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[38,)"
+loaderVersion="[42,)"
 license="All Rights Reserved"
 
 [[mods]]
 modId="mo_enchants"
-version="1.4.2-RELEASE+1.18.2MC"
+version="1.5-RELEASE+1.19.2MC"
 displayName="Mo' Enchants"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/mo-enchants"
 logoFile="logo.png"
