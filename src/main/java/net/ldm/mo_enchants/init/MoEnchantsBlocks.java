@@ -1,7 +1,3 @@
-
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.ldm.mo_enchants.init;
 
 import net.minecraftforge.registries.RegistryObject;
