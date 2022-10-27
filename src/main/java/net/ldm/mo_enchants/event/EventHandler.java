@@ -40,7 +40,7 @@ public class EventHandler {
             FireCoatingHelper.execute(event.player);
             FreezingCurseHelper.execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
             MagmaWalkerHelper.execute(event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
-            PanicHelper.execute(event.player.level, event.player);
+            PanicHelper.execute(event.player.level, event.player, event.player.getX(), event.player.getY(), event.player.getZ());
             SavingGraceHelper.execute(event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
         }
     }
