@@ -1,7 +1,7 @@
 # To Do
 ### v1.5
 - Replace all uses of `getItemEnchantmentLevel()` with `getTagEnchantmentLevel()` **[Deprecation]**
-- Continue moving event listeners to `Events.java`, starting from `RockMendingHelper`
+- Continue moving event listeners to `Events.java`, starting from `SwiftnessHelper`
 - Optimize all helper classes, make more readable
 - Go through all enchantment classes, confirm everything is correct
 - Merge all bonus damage enchantment (`Aqua Slash`, `Hunter`, `First Strike`, `Devestation`) into one class `BonusDamageEnchantment`
