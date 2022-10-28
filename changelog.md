@@ -1,5 +1,5 @@
 # Changelog
-### Mo’ Enchants v1.4 (1.18/1.18.1/1.18.2) [1.4-RELEASE+1.18.2MC]
+### Mo’ Enchants v1.4.2 (1.18.x)
 *The first 1.18 release is here! Get ready to play Mo’ Enchants with the new cave generation!*
 -   Fixed: Revenant would 2-shot The Wither
 -   Removed: Evoker’s Fang (Shield enchantment)
