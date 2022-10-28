@@ -1,6 +1,12 @@
 # To Do
+**Legend** <br>
+✅ - Developed, passed tests.<br>
+❎ - Developed, failed tests.<br>
+🚩 - Developed, not tested.
+
+
 ### v1.5
-- ✅ Replace all uses of `getItemEnchantmentLevel()` with `getTagEnchantmentLevel()` **[Deprecation]**
+- ✅ Replace all uses of `getItemEnchantmentLevel()` with `getTagEnchantmentLevel()` `Deprecated`
 - ✅ Move event listeners to `Events.java`
 - ✅ Optimize all helper classes, make more readable
 - ✅ Go through all enchantment classes, confirm everything is correct
@@ -14,10 +20,12 @@
 - `Panic` has a bug: if there is constant damage, game will crash (server tick loop) **Possible fixes:**
   - 🚩 Move `Panic` event call to `onEntityAttacked` from `onPlayerTick`
 
+
 ### v1.6
 - `Water Protection`: Damage protection from drowning, tridents, and the Aqua Slash enchantment
 - Move `Aqua Slash` enchantment to use entity tags, instead of hardcode
 - Add more nether mobs into `Aqua Slash` damage bonus (e.g. Strider)
+
 
 ### v1.6 or v1.7
 - Add `@bcat's` `Reeling` enchantment
