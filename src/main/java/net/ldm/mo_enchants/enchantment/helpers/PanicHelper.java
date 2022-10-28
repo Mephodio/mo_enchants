@@ -28,8 +28,8 @@ public class PanicHelper {
 
 			// if not on cooldown - starts here
 			entity.setHealth(7);
-			entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, (enchLevel * 200), enchLevel));
-			entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (enchLevel * 150), enchLevel));
+			entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, (enchLevel * 50), enchLevel));
+			entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (enchLevel * 60), enchLevel));
 			if (entity instanceof ServerPlayer) {
 				if (world.isClientSide())
 					Minecraft.getInstance().gameRenderer.displayItemActivation(
@@ -64,7 +64,7 @@ public class PanicHelper {
 					entity.getPersistentData().putBoolean("panicEnchantmentCooldown", false);
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
-			}.start(200 / enchLevel);
+			}.start(240 / enchLevel);
 		} else {
 			if (entity instanceof Player player && !player.level.isClientSide())
 				player.displayClientMessage(Component.translatable("cooldown.input", Component.translatable("enchantment.mo_enchants.panic")), true);

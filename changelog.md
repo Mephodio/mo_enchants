@@ -21,6 +21,7 @@
 - Optimized: Angel's Blessing enchantment now uses built-in Totem of Undying method
 - Modified: Aqua Slash and Hunter now deal less damage
 - Modified: Panic now triggers at 7 ❤️instead of 4 ❤️
+- Modified: Panic enchantment's effects now last shorter 
 
 
 ### Mo' Enchants v1.6 (1.19.2)
