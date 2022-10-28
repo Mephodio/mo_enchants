@@ -1,0 +1,98 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2022-10-27 23:28:22
+Description: Exception in server tick loop
+
+java.lang.ClassCastException: class net.ldm.mo_enchants.enchantment.helpers.PanicHelper$1 cannot be cast to class net.ldm.mo_enchants.enchantment.helpers.BloodthirstHelper$1 (net.ldm.mo_enchants.enchantment.helpers.PanicHelper$1 and net.ldm.mo_enchants.enchantment.helpers.BloodthirstHelper$1 are in module mo_enchants@1.5-RELEASE+1.19.2MC of loader 'TRANSFORMER' @2eeb0f9b)
+	at net.ldm.mo_enchants.enchantment.helpers.___tick_ServerTickEvent.invoke(.dynamic) ~[%23188!/:?] {re:classloading,pl:eventbus:B}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.3.jar%23107!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.3.jar%23107!/:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.3.jar%23107!/:?] {}
+	at net.minecraftforge.event.ForgeEventFactory.onPostServerTick(ForgeEventFactory.java:813) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23182%23189!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:843) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 1781668784 bytes (1699 MiB) / 2751463424 bytes (2624 MiB) up to 16936599552 bytes (16152 MiB)
+	CPUs: 6
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i5-9400F CPU @ 2.90GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 10
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 2.90
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 6
+	Graphics card #0 name: NVIDIA GeForce GTX 1660 Ti
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2182
+	Graphics card #0 versionInfo: DriverVersion=30.0.15.1123
+	Graphics card #1 name: LuminonCore IDDCX Adapter
+	Graphics card #1 vendor: LuminonCore
+	Graphics card #1 VRAM (MB): 0.00
+	Graphics card #1 deviceId: unknown
+	Graphics card #1 versionInfo: DriverVersion=1.0.2018.1204
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 2.13
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 2.13
+	Memory slot #1 type: DDR4
+	Memory slot #2 capacity (MB): 16384.00
+	Memory slot #2 clockSpeed (GHz): 2.13
+	Memory slot #2 type: DDR4
+	Memory slot #3 capacity (MB): 16384.00
+	Memory slot #3 clockSpeed (GHz): 2.13
+	Memory slot #3 type: DDR4
+	Virtual memory max (MB): 73564.84
+	Virtual memory used (MB): 19403.50
+	Swap memory total (MB): 8970.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/54, l='ServerLevel[Main Testing World]', x=-124.44, y=71.61, z=-274.91]]
+	Data Packs: vanilla, mod:forge, mod:mo_enchants (incompatible)
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.1.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.1.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.1.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.1.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.1.1.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19.2-43.1.1_mapped_official_1.19.2.jar    |Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |43.1.1              |DONE      |Manifest: NOSIGNATURE
+		main                                              |Mo' Enchants                  |mo_enchants                   |1.5-RELEASE+1.19.2MC|DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: a5dacd80-42a0-462d-b59d-3499e43a4bb6
+	FML: 43.1
+	Forge: net.minecraftforge:43.1.1

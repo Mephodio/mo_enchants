@@ -22,7 +22,7 @@ public class BonusDamageEnchantmentHelper {
 	public static void onLivingDamage( LivingDamageEvent event ) {
 		if (event.getEntity() instanceof Animal && event.getSource().getEntity() != null && event.getSource().getEntity() instanceof LivingEntity attacker) {
 			if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.HUNTER.get(), attacker.getMainHandItem()) >= 1) {
-				event.setAmount((float) (event.getAmount() + EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.HUNTER.get(), attacker.getMainHandItem()) * 2.5));
+				event.setAmount((float) (event.getAmount() + EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.HUNTER.get(), attacker.getMainHandItem()) * 1.5));
 			}
 			return;
 		}
@@ -31,7 +31,7 @@ public class BonusDamageEnchantmentHelper {
 				&& event.getSource().getEntity() != null && event.getSource().getEntity() instanceof LivingEntity) {
 			LivingEntity attacker = (LivingEntity) event.getSource().getEntity();
 			if (attacker != null && EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.AQUA_SLASH.get(), attacker.getMainHandItem()) >= 1) {
-				event.setAmount((float) (event.getAmount() + EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.AQUA_SLASH.get(), attacker.getMainHandItem()) * 2.5));
+				event.setAmount((float) (event.getAmount() + EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.AQUA_SLASH.get(), attacker.getMainHandItem()) * 1.5));
 			}
 		}
 

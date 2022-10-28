@@ -5,6 +5,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -33,6 +34,9 @@ public class BloodthirstHelper {
 				livingEntity.hurt(new DamageSource("enchantment.bloodthirst").bypassArmor(), 5);
 				livingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 240, EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(), livingEntity.getMainHandItem())));
 				livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 240, 0));
+				livingEntity.getUseItem().hurt(15, RandomSource.create(), null);
+				livingEntity.getUseItem().shrink(1);
+				livingEntity.getUseItem().setDamageValue(0);
 			}
 
 			if (world instanceof Level level) {
