@@ -1,173 +1,679 @@
-[27Oct.2022 23:21:48.857] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.19, --assetsDir, C:\Users\Logan\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 43.1.1, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853]
-[27Oct.2022 23:21:48.861] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.1 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
-[27Oct.2022 23:21:49.008] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/logan/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23120!/ Service=ModLauncher Env=CLIENT
-[27Oct.2022 23:21:49.408] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.19.2-43.1.1\4ed0d46c3cd0883da364ee1aace4f012ab07f408\javafmllanguage-1.19.2-43.1.1.jar is missing mods.toml file
-[27Oct.2022 23:21:49.413] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.19.2-43.1.1\f185fdcfb9aa2db13cb366d80f6902bb29b10437\lowcodelanguage-1.19.2-43.1.1.jar is missing mods.toml file
-[27Oct.2022 23:21:49.417] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.19.2-43.1.1\5c1fbe775a983c4f8bdba7b491644b50b619f11d\mclanguage-1.19.2-43.1.1.jar is missing mods.toml file
-[27Oct.2022 23:21:49.421] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.19.2-43.1.1\4108eba77f38a55539813fecb638eeccf7fd6314\fmlcore-1.19.2-43.1.1.jar is missing mods.toml file
-[27Oct.2022 23:21:49.554] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[27Oct.2022 23:21:51.331] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Logan\.gradle\caches\forge_gradle\assets, --assetIndex, 1.19]
-[27Oct.2022 23:21:55.169] [pool-3-thread-1/INFO] [net.minecraft.util.datafix.DataFixers/]: Building unoptimized datafixer
-[27Oct.2022 23:21:57.419] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/logan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.1_mapped_official_1.19.2/forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/assets/.mcassetsroot' uses unexpected schema
-[27Oct.2022 23:21:57.420] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/logan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.1_mapped_official_1.19.2/forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/data/.mcassetsroot' uses unexpected schema
-[27Oct.2022 23:21:57.450] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[27Oct.2022 23:21:57.456] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[27Oct.2022 23:21:57.635] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[27Oct.2022 23:21:58.823] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.1.1, for MC 1.19.2 with MCP 20220805.130853
-[27Oct.2022 23:21:58.826] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.1.1 Initialized
-[27Oct.2022 23:22:01.393] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
-[27Oct.2022 23:22:01.583] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
-[27Oct.2022 23:22:01.627] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
-[27Oct.2022 23:22:02.186] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[27Oct.2022 23:22:02.593] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 43.1.1 Target: null
-[27Oct.2022 23:22:10.252] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[27Oct.2022 23:22:10.252] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[27Oct.2022 23:22:10.300] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek High Definition Audio)
-[27Oct.2022 23:22:10.301] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[27Oct.2022 23:22:10.441] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x2 minecraft:textures/atlas/blocks.png-atlas
-[27Oct.2022 23:22:10.445] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x2 minecraft:textures/atlas/signs.png-atlas
-[27Oct.2022 23:22:10.448] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
-[27Oct.2022 23:22:10.449] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
-[27Oct.2022 23:22:10.450] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
-[27Oct.2022 23:22:10.450] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
-[27Oct.2022 23:22:10.450] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
-[27Oct.2022 23:22:11.230] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[27Oct.2022 23:22:11.449] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[27Oct.2022 23:22:11.451] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[27Oct.2022 23:22:11.451] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[27Oct.2022 23:22:11.755] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[27Oct.2022 23:22:40.565] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[27Oct.2022 23:22:41.459] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1179 advancements
-[27Oct.2022 23:22:41.976] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.19.2
-[27Oct.2022 23:22:41.976] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[27Oct.2022 23:22:42.454] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[27Oct.2022 23:22:45.806] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Oct.2022 23:22:45.806] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Oct.2022 23:22:45.806] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Oct.2022 23:22:45.806] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Oct.2022 23:22:45.806] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Oct.2022 23:22:45.806] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Oct.2022 23:22:45.806] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[27Oct.2022 23:22:46.018] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[27Oct.2022 23:22:46.515] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 74%
-[27Oct.2022 23:22:46.788] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[27Oct.2022 23:22:46.816] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 4329 ms
-[27Oct.2022 23:22:46.912] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
-[27Oct.2022 23:22:46.920] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[27Oct.2022 23:22:47.026] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[27Oct.2022 23:22:47.688] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[27Oct.2022 23:22:47.740] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@187a3be3
-[27Oct.2022 23:22:47.770] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:a0a20aa5] logged in with entity id 54 at (-123.39608138812751, 72.0, -267.00725373809513)
-[27Oct.2022 23:22:47.912] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[27Oct.2022 23:22:49.275] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 102 advancements
-[27Oct.2022 23:23:40.972] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev fell out of the world
-[27Oct.2022 23:23:40.977] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Killed Dev]
-[27Oct.2022 23:23:40.983] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev fell out of the world
-[27Oct.2022 23:23:40.988] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Killed Dev
-[27Oct.2022 23:24:02.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Teleported Dev to -123.396081, 72.000000, -267.007254]
-[27Oct.2022 23:24:02.079] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Teleported Dev to -123.396081, 72.000000, -267.007254
-[27Oct.2022 23:24:08.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set spawn point to -127, 72, -259 [0.0] in minecraft:overworld for Dev]
-[27Oct.2022 23:24:08.059] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set spawn point to -127, 72, -259 [0.0] in minecraft:overworld for Dev
-[27Oct.2022 23:24:14.488] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[27Oct.2022 23:24:14.502] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
-[27Oct.2022 23:24:14.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
-[27Oct.2022 23:24:14.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
-[27Oct.2022 23:24:21.136] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Removed 5 items from player Dev]
-[27Oct.2022 23:24:21.137] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Removed 5 items from player Dev
-[27Oct.2022 23:24:24.423] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[27Oct.2022 23:24:24.423] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[27Oct.2022 23:24:35.410] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[27Oct.2022 23:24:35.412] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
-[27Oct.2022 23:24:49.460] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
-[27Oct.2022 23:24:49.462] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
-[27Oct.2022 23:25:13.655] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Hot Stuff]
-[27Oct.2022 23:25:13.658] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has made the advancement [Hot Stuff]
-[27Oct.2022 23:25:13.696] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 103 advancements
-[27Oct.2022 23:25:13.891] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 104 advancements
-[27Oct.2022 23:26:50.495] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
-[27Oct.2022 23:26:50.497] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
-[27Oct.2022 23:26:54.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:26:54.259] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:26:57.344] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 104 advancements
-[27Oct.2022 23:27:00.350] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:00.352] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:27:02.939] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[27Oct.2022 23:27:02.950] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
-[27Oct.2022 23:27:02.954] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
-[27Oct.2022 23:27:02.955] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
-[27Oct.2022 23:27:04.695] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:04.696] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:27:08.243] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 110 advancements
-[27Oct.2022 23:27:08.282] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:08.283] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:27:08.596] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:08.597] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:27:08.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was burnt to a crisp whilst fighting Spider
-[27Oct.2022 23:27:08.693] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was burnt to a crisp whilst fighting Spider
-[27Oct.2022 23:27:17.871] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gamerule keepInventory is now set to: true]
-[27Oct.2022 23:27:17.872] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gamerule keepInventory is now set to: true
-[27Oct.2022 23:27:41.143] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:41.144] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:27:45.232] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:45.233] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:27:50.476] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:50.477] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:27:50.883] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:50.885] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:27:51.359] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:51.360] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:27:53.643] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev was slain by Spider
-[27Oct.2022 23:27:53.645] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev was slain by Spider
-[27Oct.2022 23:27:59.854] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:27:59.856] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:28:00.197] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:28:00.199] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:28:07.581] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
-[27Oct.2022 23:28:07.582] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
-[27Oct.2022 23:28:21.442] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 110 advancements
-[27Oct.2022 23:28:21.946] [Server thread/ERROR] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: Exception caught during firing event: class net.ldm.mo_enchants.enchantment.helpers.PanicHelper$1 cannot be cast to class net.ldm.mo_enchants.enchantment.helpers.BloodthirstHelper$1 (net.ldm.mo_enchants.enchantment.helpers.PanicHelper$1 and net.ldm.mo_enchants.enchantment.helpers.BloodthirstHelper$1 are in module mo_enchants@1.5-RELEASE+1.19.2MC of loader 'TRANSFORMER' @2eeb0f9b)
-	Index: 2
-	Listeners:
-		0: NORMAL
-		1: ASM: net.minecraftforge.common.ForgeInternalHandler@24ba2cbc onServerTick(Lnet/minecraftforge/event/TickEvent$ServerTickEvent;)V
-		2: ASM: net.ldm.mo_enchants.enchantment.helpers.PanicHelper$1@7d72a920 tick(Lnet/minecraftforge/event/TickEvent$ServerTickEvent;)V
-java.lang.ClassCastException: class net.ldm.mo_enchants.enchantment.helpers.PanicHelper$1 cannot be cast to class net.ldm.mo_enchants.enchantment.helpers.BloodthirstHelper$1 (net.ldm.mo_enchants.enchantment.helpers.PanicHelper$1 and net.ldm.mo_enchants.enchantment.helpers.BloodthirstHelper$1 are in module mo_enchants@1.5-RELEASE+1.19.2MC of loader 'TRANSFORMER' @2eeb0f9b)
-	at TRANSFORMER/mo_enchants@1.5-RELEASE+1.19.2MC/net.ldm.mo_enchants.enchantment.helpers.___tick_ServerTickEvent.invoke(.dynamic)
-	at MC-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73)
-	at MC-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.post(EventBus.java:315)
-	at MC-BOOTSTRAP/net.minecraftforge.eventbus/net.minecraftforge.eventbus.EventBus.post(EventBus.java:296)
-	at TRANSFORMER/forge@43.1.1/net.minecraftforge.event.ForgeEventFactory.onPostServerTick(ForgeEventFactory.java:813)
-	at TRANSFORMER/minecraft@1.19.2/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:843)
-	at TRANSFORMER/minecraft@1.19.2/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84)
-	at TRANSFORMER/minecraft@1.19.2/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654)
-	at TRANSFORMER/minecraft@1.19.2/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-[27Oct.2022 23:28:21.946] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: Encountered an unexpected exception
-java.lang.ClassCastException: class net.ldm.mo_enchants.enchantment.helpers.PanicHelper$1 cannot be cast to class net.ldm.mo_enchants.enchantment.helpers.BloodthirstHelper$1 (net.ldm.mo_enchants.enchantment.helpers.PanicHelper$1 and net.ldm.mo_enchants.enchantment.helpers.BloodthirstHelper$1 are in module mo_enchants@1.5-RELEASE+1.19.2MC of loader 'TRANSFORMER' @2eeb0f9b)
-	at net.ldm.mo_enchants.enchantment.helpers.___tick_ServerTickEvent.invoke(.dynamic) ~[%23188!/:?]
-	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:73) ~[eventbus-6.0.3.jar%23107!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:315) ~[eventbus-6.0.3.jar%23107!/:?]
-	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:296) ~[eventbus-6.0.3.jar%23107!/:?]
-	at net.minecraftforge.event.ForgeEventFactory.onPostServerTick(ForgeEventFactory.java:813) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23182%23189!/:?]
-	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:843) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/:?]
-	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:84) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/:?]
-	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:654) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/:?]
-	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:244) ~[forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/:?]
-	at java.lang.Thread.run(Thread.java:833) [?:?]
-[27Oct.2022 23:28:22.167] [Server thread/FATAL] [net.minecraftforge.common.ForgeMod/]: Preparing crash report with UUID a5dacd80-42a0-462d-b59d-3499e43a4bb6
-[27Oct.2022 23:28:22.167] [Server thread/ERROR] [net.minecraft.server.MinecraftServer/]: This crash report has been saved to: E:\Mods\Forge\mo_enchants\run\.\crash-reports\crash-2022-10-27_23.28.22-server.txt
-[27Oct.2022 23:28:22.168] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[27Oct.2022 23:28:22.169] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[27Oct.2022 23:28:22.170] [Render thread/FATAL] [net.minecraftforge.common.ForgeMod/]: Preparing crash report with UUID e6f87406-d09f-428b-9d78-d965d15bb464
-[27Oct.2022 23:28:22.180] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[27Oct.2022 23:28:22.180] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[27Oct.2022 23:28:22.187] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[27Oct.2022 23:28:22.187] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[27Oct.2022 23:28:23.040] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
-[27Oct.2022 23:28:23.086] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
-[27Oct.2022 23:28:23.087] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
-[27Oct.2022 23:28:23.099] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (2)): All chunks are saved
-[27Oct.2022 23:28:23.099] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[27Oct.2022 23:28:23.099] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[27Oct.2022 23:28:23.099] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[28Oct.2022 16:28:13.900] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.19, --assetsDir, C:\Users\Logan\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 43.1.1, --fml.mcVersion, 1.19.2, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20220805.130853]
+[28Oct.2022 16:28:13.922] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.8+10.0.8+main.0ef7e830 starting: java version 17.0.1 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[28Oct.2022 16:28:14.106] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/logan/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23120!/ Service=ModLauncher Env=CLIENT
+[28Oct.2022 16:28:14.579] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.19.2-43.1.1\4ed0d46c3cd0883da364ee1aace4f012ab07f408\javafmllanguage-1.19.2-43.1.1.jar is missing mods.toml file
+[28Oct.2022 16:28:14.582] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.19.2-43.1.1\f185fdcfb9aa2db13cb366d80f6902bb29b10437\lowcodelanguage-1.19.2-43.1.1.jar is missing mods.toml file
+[28Oct.2022 16:28:14.586] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.19.2-43.1.1\5c1fbe775a983c4f8bdba7b491644b50b619f11d\mclanguage-1.19.2-43.1.1.jar is missing mods.toml file
+[28Oct.2022 16:28:14.592] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\logan\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.19.2-43.1.1\4108eba77f38a55539813fecb638eeccf7fd6314\fmlcore-1.19.2-43.1.1.jar is missing mods.toml file
+[28Oct.2022 16:28:14.711] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[28Oct.2022 16:28:16.183] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Logan\.gradle\caches\forge_gradle\assets, --assetIndex, 1.19]
+[28Oct.2022 16:28:19.762] [pool-3-thread-1/INFO] [net.minecraft.util.datafix.DataFixers/]: Building unoptimized datafixer
+[28Oct.2022 16:28:21.580] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/logan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.1_mapped_official_1.19.2/forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/assets/.mcassetsroot' uses unexpected schema
+[28Oct.2022 16:28:21.580] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResources/]: Assets URL 'union:/C:/Users/logan/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.1.1_mapped_official_1.19.2/forge-1.19.2-43.1.1_mapped_official_1.19.2.jar%23183!/data/.mcassetsroot' uses unexpected schema
+[28Oct.2022 16:28:21.615] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[28Oct.2022 16:28:21.619] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[28Oct.2022 16:28:21.788] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[28Oct.2022 16:28:22.424] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 43.1.1, for MC 1.19.2 with MCP 20220805.130853
+[28Oct.2022 16:28:22.425] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v43.1.1 Initialized
+[28Oct.2022 16:28:24.139] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[28Oct.2022 16:28:24.284] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[28Oct.2022 16:28:24.375] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[28Oct.2022 16:28:25.345] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[28Oct.2022 16:28:25.743] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 43.1.1 Target: null
+[28Oct.2022 16:28:33.425] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[28Oct.2022 16:28:33.425] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[28Oct.2022 16:28:33.469] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Speakers (Realtek High Definition Audio)
+[28Oct.2022 16:28:33.470] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[28Oct.2022 16:28:33.595] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x2 minecraft:textures/atlas/blocks.png-atlas
+[28Oct.2022 16:28:33.599] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x2 minecraft:textures/atlas/signs.png-atlas
+[28Oct.2022 16:28:33.600] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/banner_patterns.png-atlas
+[28Oct.2022 16:28:33.600] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x2 minecraft:textures/atlas/shield_patterns.png-atlas
+[28Oct.2022 16:28:33.601] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x2 minecraft:textures/atlas/chest.png-atlas
+[28Oct.2022 16:28:33.601] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/beds.png-atlas
+[28Oct.2022 16:28:33.602] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x2 minecraft:textures/atlas/shulker_boxes.png-atlas
+[28Oct.2022 16:28:34.298] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[28Oct.2022 16:28:34.483] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[28Oct.2022 16:28:34.484] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[28Oct.2022 16:28:34.484] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[28Oct.2022 16:28:34.916] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[28Oct.2022 16:30:20.052] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[28Oct.2022 16:30:20.873] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1179 advancements
+[28Oct.2022 16:30:21.369] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.19.2
+[28Oct.2022 16:30:21.369] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[28Oct.2022 16:30:21.761] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[28Oct.2022 16:30:24.797] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Oct.2022 16:30:24.798] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Oct.2022 16:30:24.798] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Oct.2022 16:30:24.798] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Oct.2022 16:30:24.798] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Oct.2022 16:30:24.798] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Oct.2022 16:30:24.798] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Oct.2022 16:30:25.311] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 54%
+[28Oct.2022 16:30:25.657] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[28Oct.2022 16:30:25.662] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3867 ms
+[28Oct.2022 16:30:25.784] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 5, from 10
+[28Oct.2022 16:30:25.786] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[28Oct.2022 16:30:25.877] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[28Oct.2022 16:30:26.522] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[28Oct.2022 16:30:26.663] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@3432f2ec
+[28Oct.2022 16:30:26.676] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:d07cfbef] logged in with entity id 60 at (-124.44400398365167, 71.6103968562588, -274.9148905033197)
+[28Oct.2022 16:30:26.727] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[28Oct.2022 16:30:28.557] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 110 advancements
+[28Oct.2022 16:30:30.408] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[28Oct.2022 16:30:30.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[28Oct.2022 16:30:30.536] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[28Oct.2022 16:30:30.538] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[28Oct.2022 16:32:23.521] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev tried to swim in lava
+[28Oct.2022 16:32:23.527] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev tried to swim in lava
+[28Oct.2022 16:32:29.408] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[28Oct.2022 16:32:29.416] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[28Oct.2022 16:32:29.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[28Oct.2022 16:32:29.423] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[28Oct.2022 16:32:33.407] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[28Oct.2022 16:32:33.414] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[28Oct.2022 16:32:33.420] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[28Oct.2022 16:32:33.421] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[28Oct.2022 16:32:39.164] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev tried to swim in lava
+[28Oct.2022 16:32:39.165] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev tried to swim in lava
+[28Oct.2022 16:32:54.980] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Gave 1 [Command Block] to Dev]
+[28Oct.2022 16:32:54.981] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Gave 1 [Command Block] to Dev
+[28Oct.2022 16:33:06.023] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Unable to modify player data
+[28Oct.2022 16:33:14.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[28Oct.2022 16:33:14.742] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[28Oct.2022 16:33:19.508] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[28Oct.2022 16:33:19.518] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[28Oct.2022 16:33:19.523] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[28Oct.2022 16:33:19.524] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[28Oct.2022 16:33:31.834] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Command set: effect give Dev minecraft:instant_health 1 1 true
+[28Oct.2022 16:33:32.633] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[28Oct.2022 16:33:32.634] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[28Oct.2022 16:33:33.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.559] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.608] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.659] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.707] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.708] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.761] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.809] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.860] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.910] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:33.960] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:34.007] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:34.009] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.108] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.162] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.209] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.261] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.309] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.361] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.408] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.461] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.508] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.558] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.610] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.662] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:35.710] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.209] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.258] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.309] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.358] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.409] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.460] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.509] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.563] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.610] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.662] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.667] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.711] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.761] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.811] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.860] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.910] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:38.960] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.011] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.059] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.159] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.161] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.207] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.208] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.259] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.311] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.362] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.409] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.461] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.558] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.609] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.659] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.711] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.762] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.812] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.858] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.911] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:39.960] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.007] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.011] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.061] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.157] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.161] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.213] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.261] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.312] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.360] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.410] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.460] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.512] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.560] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.613] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.661] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.708] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.759] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.808] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.859] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.911] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:40.959] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.012] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.060] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.107] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.109] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.158] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.212] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.258] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.313] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.360] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.409] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.461] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.509] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.559] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.610] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.657] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.657] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.711] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.762] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.808] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.859] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.909] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:41.958] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.007] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.009] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.059] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.109] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.109] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.163] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.212] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.261] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.311] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.362] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.413] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.462] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.511] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.561] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.609] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.659] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.708] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.762] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.812] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.858] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.907] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.912] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:42.959] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.010] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.061] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.159] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.209] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.261] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.309] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.313] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.360] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.413] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.459] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.511] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.559] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.609] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.658] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.709] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.757] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.759] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.810] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.862] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.912] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:43.962] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.007] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.010] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.062] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.109] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.161] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.210] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.259] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.308] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.358] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.407] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.460] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.526] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.533] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.557] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.563] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.609] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.612] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.661] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.709] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.762] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.809] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.860] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.908] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:44.958] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:45.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:45.009] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:45.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:45.059] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:45.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:45.109] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:45.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:45.158] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:45.507] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[28Oct.2022 16:33:45.512] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[28Oct.2022 16:33:45.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[28Oct.2022 16:33:45.517] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[28Oct.2022 16:33:48.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.309] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.359] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.408] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.458] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.561] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.610] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.660] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.711] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.761] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.809] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.859] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.909] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:48.960] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.007] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.009] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.058] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.111] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.160] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.209] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.260] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.309] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.360] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.409] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.459] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.509] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.560] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.611] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.659] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.711] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.759] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.808] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.861] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.911] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:49.958] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.009] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.059] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.112] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.157] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.160] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.208] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.259] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.310] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.358] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.410] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.460] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.507] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.559] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.568] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.636] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.716] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.722] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.732] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.732] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.732] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.763] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.781] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.809] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.815] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.857] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.860] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.907] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.909] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:50.960] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.009] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.060] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.158] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.162] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.207] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.208] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.260] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.310] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.360] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.410] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.461] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.561] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.612] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.660] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.710] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.759] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.808] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.811] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.857] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.858] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.910] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:51.959] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.010] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.061] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.109] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.157] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.159] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.209] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.258] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.312] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.358] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.359] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.409] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.458] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.510] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.559] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.607] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.608] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.657] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.658] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.712] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.759] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.809] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.812] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.858] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.909] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:52.960] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.009] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.060] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.110] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.157] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.159] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.210] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.261] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.308] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.311] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.368] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.417] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.458] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.462] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.508] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.508] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.561] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.608] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.659] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.708] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.710] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:53.758] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [@: Applied effect Instant Health to Dev]
+[28Oct.2022 16:33:54.566] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 111 advancements
+[28Oct.2022 16:33:59.843] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
+[28Oct.2022 16:33:59.843] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
+[28Oct.2022 16:34:00.642] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
+[28Oct.2022 16:34:00.643] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
+[28Oct.2022 16:34:00.989] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
+[28Oct.2022 16:34:00.991] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
+[28Oct.2022 16:34:01.300] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
+[28Oct.2022 16:34:01.302] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
+[28Oct.2022 16:34:01.668] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Summoned new Spider]
+[28Oct.2022 16:34:01.668] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Summoned new Spider
+[28Oct.2022 16:34:14.500] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[28Oct.2022 16:34:14.501] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[28Oct.2022 16:34:18.501] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has the following entity data: {Brain: {memories: {}}, HurtByTimestamp: 1598, SleepTimer: 0s, SpawnForced: 1b, Attributes: [{Base: 0.0d, Name: "forge:step_height_addition"}, {Base: 20.0d, Name: "minecraft:generic.max_health"}, {Base: 0.08d, Name: "forge:entity_gravity"}, {Base: 0.10000000149011612d, Name: "minecraft:generic.movement_speed"}, {Base: 0.0d, Name: "minecraft:generic.armor_toughness"}, {Base: 4.5d, Name: "forge:reach_distance"}, {Base: 0.0d, Name: "minecraft:generic.armor"}], Invulnerable: 0b, FallFlying: 0b, PortalCooldown: 0, AbsorptionAmount: 0.0f, abilities: {invulnerable: 1b, mayfly: 1b, instabuild: 1b, walkSpeed: 0.1f, mayBuild: 1b, flying: 0b, flySpeed: 0.05f}, FallDistance: 0.0f, recipeBook: {recipes: ["minecraft:mangrove_boat", "minecraft:barrel", "minecraft:chest", "minecraft:yellow_wool", "minecraft:charcoal", "minecraft:acacia_boat", "minecraft:black_bed", "minecraft:bone_meal", "minecraft:lime_wool", "minecraft:jungle_boat", "minecraft:light_gray_wool", "minecraft:white_banner", "minecraft:iron_nugget_from_blasting", "minecraft:loom", "minecraft:purple_wool", "minecraft:red_wool", "minecraft:iron_sword", "minecraft:cooked_mutton_from_campfire_cooking", "minecraft:crossbow", "minecraft:dark_oak_boat", "minecraft:dispenser", "minecraft:iron_door", "minecraft:iron_chestplate", "minecraft:shield", "minecraft:white_carpet", "minecraft:brown_wool", "minecraft:iron_nugget", "minecraft:spruce_planks", "minecraft:iron_pickaxe", "minecraft:cooked_mutton_from_smoking", "minecraft:smithing_table", "minecraft:black_banner", "minecraft:painting", "minecraft:iron_shovel", "minecraft:white_wool_from_string", "minecraft:tripwire_hook", "minecraft:hopper", "minecraft:cooked_mutton", "minecraft:heavy_weighted_pressure_plate", "minecraft:chain", "minecraft:pink_wool", "minecraft:lantern", "minecraft:fishing_rod", "minecraft:iron_leggings", "minecraft:magenta_wool", "minecraft:candle", "minecraft:spruce_boat", "minecraft:birch_boat", "minecraft:gray_wool", "minecraft:green_wool", "minecraft:light_blue_wool", "minecraft:iron_bars", "minecraft:iron_boots", "minecraft:shears", "minecraft:iron_trapdoor", "minecraft:orange_wool", "minecraft:black_wool", "minecraft:black_carpet", "minecraft:iron_helmet", "minecraft:iron_axe", "minecraft:cyan_wool", "minecraft:iron_nugget_from_smelting", "minecraft:composter", "minecraft:iron_block", "minecraft:white_bed", "minecraft:blue_wool", "minecraft:iron_hoe", "minecraft:bow", "minecraft:minecart", "minecraft:oak_boat", "minecraft:bucket", "minecraft:glow_item_frame"], isBlastingFurnaceFilteringCraftable: 0b, isSmokerGuiOpen: 0b, isFilteringCraftable: 0b, toBeDisplayed: ["minecraft:mangrove_boat", "minecraft:barrel", "minecraft:chest", "minecraft:yellow_wool", "minecraft:charcoal", "minecraft:acacia_boat", "minecraft:black_bed", "minecraft:bone_meal", "minecraft:lime_wool", "minecraft:jungle_boat", "minecraft:light_gray_wool", "minecraft:white_banner", "minecraft:iron_nugget_from_blasting", "minecraft:loom", "minecraft:purple_wool", "minecraft:red_wool", "minecraft:iron_sword", "minecraft:cooked_mutton_from_campfire_cooking", "minecraft:crossbow", "minecraft:dark_oak_boat", "minecraft:dispenser", "minecraft:iron_door", "minecraft:iron_chestplate", "minecraft:shield", "minecraft:white_carpet", "minecraft:brown_wool", "minecraft:iron_nugget", "minecraft:spruce_planks", "minecraft:iron_pickaxe", "minecraft:cooked_mutton_from_smoking", "minecraft:smithing_table", "minecraft:black_banner", "minecraft:painting", "minecraft:iron_shovel", "minecraft:white_wool_from_string", "minecraft:tripwire_hook", "minecraft:hopper", "minecraft:cooked_mutton", "minecraft:heavy_weighted_pressure_plate", "minecraft:chain", "minecraft:pink_wool", "minecraft:lantern", "minecraft:fishing_rod", "minecraft:iron_leggings", "minecraft:magenta_wool", "minecraft:candle", "minecraft:spruce_boat", "minecraft:birch_boat", "minecraft:gray_wool", "minecraft:green_wool", "minecraft:light_blue_wool", "minecraft:iron_bars", "minecraft:iron_boots", "minecraft:shears", "minecraft:iron_trapdoor", "minecraft:orange_wool", "minecraft:black_wool", "minecraft:black_carpet", "minecraft:iron_helmet", "minecraft:iron_axe", "minecraft:cyan_wool", "minecraft:iron_nugget_from_smelting", "minecraft:composter", "minecraft:iron_block", "minecraft:white_bed", "minecraft:blue_wool", "minecraft:iron_hoe", "minecraft:bow", "minecraft:minecart", "minecraft:oak_boat", "minecraft:bucket", "minecraft:glow_item_frame"], isFurnaceGuiOpen: 0b, isFurnaceFilteringCraftable: 0b, isGuiOpen: 0b, isBlastingFurnaceGuiOpen: 0b, isSmokerFilteringCraftable: 0b}, CanUpdate: 1b, DeathTime: 0s, XpSeed: -1840132654, XpTotal: 80, UUID: [I; 940439953, -167562164, -1601161573, -1389718966], playerGameType: 1, SpawnDimension: "minecraft:overworld", seenCredits: 0b, Motion: [0.0d, -0.0784000015258789d, 0.0d], SpawnY: 72, Health: 2.8799996f, SpawnZ: -259, foodSaturationLevel: 0.0f, SpawnX: -127, Air: 300s, OnGround: 1b, Dimension: "minecraft:overworld", SpawnAngle: 0.0f, Rotation: [-101.09952f, 19.200012f], XpLevel: 6, warden_spawn_tracker: {warning_level: 0, ticks_since_last_warning: 1702, cooldown_ticks: 0}, Score: 80, Pos: [-119.16555649655452d, 72.0d, -272.90435222710585d], previousPlayerGameType: 0, Fire: -20s, XpP: 0.42105266f, EnderItems: [], DataVersion: 3120, foodLevel: 16, foodExhaustionLevel: 2.8079987f, HurtTime: 0s, SelectedItemSlot: 0, Inventory: [{Slot: 4b, id: "minecraft:diamond_leggings", Count: 1b, tag: {Damage: 0, Enchantments: [{lvl: 2s, id: "mo_enchants:weightless"}]}}, {Slot: 5b, id: "minecraft:diamond_helmet", Count: 1b, tag: {Damage: 0, Enchantments: [{lvl: 1s, id: "mo_enchants:night_vision"}]}}, {Slot: 6b, id: "minecraft:diamond_boots", Count: 1b, tag: {Damage: 0, Enchantments: [{lvl: 3s, id: "mo_enchants:swiftness"}]}}, {Slot: 7b, id: "minecraft:diamond_boots", Count: 1b, tag: {Damage: 0, Enchantments: [{lvl: 1s, id: "mo_enchants:saving_grace"}]}}, {Slot: 8b, id: "minecraft:string", Count: 1b}, {Slot: 27b, id: "minecraft:diamond_sword", Count: 1b, tag: {Damage: 18, Enchantments: [{lvl: 3s, id: "mo_enchants:life_steal"}]}}, {Slot: 28b, id: "minecraft:diamond_boots", Count: 1b, tag: {Damage: 0, Enchantments: [{lvl: 1s, id: "mo_enchants:magma_walker"}]}}, {Slot: 29b, id: "minecraft:diamond_sword", Count: 1b, tag: {Damage: 11, Enchantments: [{lvl: 1s, id: "mo_enchants:ultimate_finish"}]}}, {Slot: 30b, id: "minecraft:diamond_sword", Count: 1b, tag: {Damage: 2, Enchantments: [{lvl: 2s, id: "mo_enchants:venomfang"}]}}, {Slot: 100b, id: "minecraft:diamond_boots", Count: 1b, tag: {Damage: 80, Enchantments: [{lvl: 2s, id: "mo_enchants:panic"}]}}], LastDeathLocation: {pos: [I; -126, 71, -275], dimension: "minecraft:overworld"}, foodTickTimer: 0}
+[28Oct.2022 16:34:46.634] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Found no elements matching bloodthirstAbilityCooldown
+[28Oct.2022 16:34:55.042] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Found no elements matching panicEnchantmentCooldown
+[28Oct.2022 16:34:57.685] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Found no elements matching forge
+[28Oct.2022 16:35:00.870] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Found no elements matching Forge
+[28Oct.2022 16:35:09.479] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[28Oct.2022 16:35:09.480] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[28Oct.2022 16:35:10.711] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev tried to swim in lava
+[28Oct.2022 16:35:10.713] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev tried to swim in lava
+[28Oct.2022 16:35:38.957] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[28Oct.2022 16:35:38.962] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[28Oct.2022 16:35:38.968] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[28Oct.2022 16:35:38.969] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[28Oct.2022 16:35:39.762] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[28Oct.2022 16:35:39.762] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[28Oct.2022 16:35:39.773] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[28Oct.2022 16:35:39.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[28Oct.2022 16:35:39.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[28Oct.2022 16:35:39.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[28Oct.2022 16:35:40.873] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[28Oct.2022 16:35:40.921] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[28Oct.2022 16:35:40.923] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[28Oct.2022 16:35:40.936] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (2)): All chunks are saved
+[28Oct.2022 16:35:40.936] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[28Oct.2022 16:35:40.936] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[28Oct.2022 16:35:40.936] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[28Oct.2022 16:35:41.864] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

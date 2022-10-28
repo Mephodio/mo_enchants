@@ -20,14 +20,14 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 public class PanicHelper {
 	public static void execute(LevelAccessor world, LivingEntity entity) {
 		if (entity == null) return;
-		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.PANIC.get(), (entity.getItemBySlot(EquipmentSlot.FEET))) <= 0 || entity.getHealth() > 4) return;
+		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.PANIC.get(), (entity.getItemBySlot(EquipmentSlot.FEET))) <= 0 || entity.getHealth() >= 8) return;
 		int enchLevel = EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.PANIC.get(), (entity.getItemBySlot(EquipmentSlot.FEET)));
 
 		if (!entity.getPersistentData().getBoolean("panicEnchantmentCooldown")) {
 			entity.getPersistentData().putBoolean("panicEnchantmentCooldown", true);
 
 			// if not on cooldown - starts here
-			entity.setHealth(5);
+			entity.setHealth(7);
 			entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, (enchLevel * 200), enchLevel));
 			entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (enchLevel * 150), enchLevel));
 			if (entity instanceof ServerPlayer) {
