@@ -17,7 +17,7 @@ public class EventHandler {
     @SubscribeEvent
     public static void onEntityAttacked( LivingHurtEvent event) {
         if (event != null && event.getEntity() != null) {
-            AngelsBlessingHelper.execute(event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity(), event.getAmount());
+            AngelsBlessingHelper.execute(event.getEntity(), event.getAmount());
             ConductionHelper.execute(event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getSource().getEntity());
             FreezingAspectHelper.execute(event.getEntity(), event.getSource().getEntity());
             FrostHelper.execute(event.getEntity(), event.getSource().getEntity());

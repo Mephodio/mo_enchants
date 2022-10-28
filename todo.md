@@ -12,6 +12,6 @@
 - Fix `Angel's Blessing` enchantment animation
 
 ### v1.6
-- Add @bcat's `Reeling` enchantment
-- Add @GGGamesXDlol's `Telekinesis` enchantment
+- Add `@bcat's` `Reeling` enchantment
+- Add `@GGGamesXDlol's` `Telekinesis` enchantment
 - Add `Replenish` enchantment (see `changelog.md`)
