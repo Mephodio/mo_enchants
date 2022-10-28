@@ -22,6 +22,7 @@
 - Modified: Aqua Slash and Hunter now deal less damage
 - Modified: Panic now triggers at 7 ❤️instead of 4 ❤️
 - Modified: Panic enchantment's effects now last shorter 
+- Modified: Density now increases gravity, instead of just slowing you down
 
 
 ### Mo' Enchants v1.6 (1.19.2)

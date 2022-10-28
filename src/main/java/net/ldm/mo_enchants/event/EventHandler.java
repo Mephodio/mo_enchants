@@ -37,7 +37,6 @@ public class EventHandler {
         if (event.phase == TickEvent.Phase.END) {
             AquaphobiaCurseHelper.execute(event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
             BoilingCurseHelper.execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
-            DensityCurseHelper.execute(event.player);
             FireCoatingHelper.execute(event.player);
             FreezingCurseHelper.execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
             MagmaWalkerHelper.execute(event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
@@ -74,6 +73,7 @@ public class EventHandler {
 
     @SubscribeEvent
     public static void onEquipmentChange(LivingEquipmentChangeEvent event) {
+        DensityCurseHelper.execute(event);
         GrowthHelper.execute(event);
         NightVisionHelper.execute(event);
         ReachHelper.execute(event);

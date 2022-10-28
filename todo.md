@@ -20,7 +20,7 @@
 - ✅ `Panic` has a bug: if there is constant damage, game will crash (server tick loop) **Possible fixes:**
   - ✅ Move `Panic` event call to `onEntityAttacked` from `onPlayerTick`
 - `Curse of Freezing` and `Curse of Boiling` don't properly check for biomes
-- Make `Density` increase gravity
+- 🚩 Make `Density` increase gravity
 
 
 ### v1.6

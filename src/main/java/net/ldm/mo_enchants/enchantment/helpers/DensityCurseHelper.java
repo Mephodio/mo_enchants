@@ -1,28 +1,27 @@
 package net.ldm.mo_enchants.enchantment.helpers;
 
-import net.ldm.mo_enchants.init.MoEnchantsEnchantments;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraftforge.common.ForgeMod;
+import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
+
+import java.util.UUID;
 
 public class DensityCurseHelper {
-	public static void execute( Entity entity ) {
-		if (entity == null)
-			return;
-		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.DENSITY_CURSE.get(),
-				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)) != 0
-				|| EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.DENSITY_CURSE.get(),
-				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)) != 0
-				|| EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.DENSITY_CURSE.get(),
-				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)) != 0
-				|| EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.DENSITY_CURSE.get(),
-				(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)) != 0) {
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 0, (false), (false)));
+	private static final AttributeModifier densityCurse = new AttributeModifier(UUID.fromString("703bede5-84db-4991-bbe9-3ac943c68fff"), "densityCurse", 0.025, AttributeModifier.Operation.ADDITION);
+
+	public static void execute(LivingEquipmentChangeEvent event) {
+		if (event.getSlot().equals(EquipmentSlot.HEAD) || event.getSlot().equals(EquipmentSlot.CHEST) || event.getSlot().equals(EquipmentSlot.LEGS) || event.getSlot().equals(EquipmentSlot.FEET)) {
+			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(ForgeMod.ENTITY_GRAVITY.get());
+
+			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:density\",lvl:1s}") && !attributeInstance.hasModifier(densityCurse)) {
+				attributeInstance.addPermanentModifier(densityCurse);
+			}
+
+			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:density\",lvl:1s}") && attributeInstance.hasModifier(densityCurse)) {
+				attributeInstance.removePermanentModifier(UUID.fromString("703bede5-84db-4991-bbe9-3ac943c68fff"));
+			}
 		}
 	}
 }
