@@ -28,6 +28,7 @@ public class EventHandler {
             RevenantHelper.execute(event.getEntity(), event.getSource().getEntity());
             ScorchingCurseHelper.execute(event.getEntity());
             ToxicAspectHelper.execute(event.getEntity(), event.getSource().getEntity());
+            PanicHelper.execute(event.getEntity().level, event.getEntity());
         }
     }
 
@@ -41,7 +42,6 @@ public class EventHandler {
             FreezingCurseHelper.execute(event.player.level, new BlockPos(event.player.getX(), event.player.getY(), event.player.getZ()), event.player);
             MagmaWalkerHelper.execute(event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
             SavingGraceHelper.execute(event.player.level, event.player.getX(), event.player.getY(), event.player.getZ(), event.player);
-            PanicHelper.execute(event.player.level, event.player);
         }
     }
 
