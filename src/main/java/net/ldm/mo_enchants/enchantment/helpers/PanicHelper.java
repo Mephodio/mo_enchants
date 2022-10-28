@@ -28,8 +28,8 @@ public class PanicHelper {
 
 			// if not on cooldown - starts here
 			entity.setHealth(7);
-			entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, (enchLevel * 50), enchLevel));
-			entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (enchLevel * 60), enchLevel));
+			entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, (enchLevel * 40), enchLevel));
+			entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (enchLevel * 40), enchLevel));
 			if (entity instanceof ServerPlayer) {
 				if (world.isClientSide())
 					Minecraft.getInstance().gameRenderer.displayItemActivation(
