@@ -21,7 +21,7 @@ public class WeightlessHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:1s}") && attributeInstance.hasModifier(weightlessEnchantmentLv1)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("2af7cbaa-5fbe-4e0b-99e0-b73c60da33d7"));
+				attributeInstance.removePermanentModifier(weightlessEnchantmentLv1.getId());
 			}
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:2s}") && !attributeInstance.hasModifier(weightlessEnchantmentLv2)) {
@@ -29,7 +29,7 @@ public class WeightlessHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:2s}") && attributeInstance.hasModifier(weightlessEnchantmentLv2)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("c5cf8602-c4b3-4a3e-a785-3d9d3ac7b52e"));
+				attributeInstance.removePermanentModifier(weightlessEnchantmentLv2.getId());
 			}
 		}
 	}
