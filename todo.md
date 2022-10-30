@@ -9,6 +9,7 @@
 | 🚩   | Developed, not tested.                 |
 | 🚫   | Developed, scrapped, removed.          |
 | ⛔   | Not developed, scrapped.               |
+| 🔰   | Not developed, not mandatory.          |
 
 ### v1.5
 
