@@ -22,7 +22,7 @@ public class ReachHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:1s}") && attributeInstance.hasModifier(reachEnchantmentLv1)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("9964fc09-999f-47a5-bf38-76f714fb447c"));
+				attributeInstance.removePermanentModifier(reachEnchantmentLv1.getId());
 			}
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:2s}") && !attributeInstance.hasModifier(reachEnchantmentLv2)) {
@@ -30,7 +30,7 @@ public class ReachHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:2s}") && attributeInstance.hasModifier(reachEnchantmentLv2)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("3b027877-2a5d-4ca2-bbbc-1dfff5386c12"));
+				attributeInstance.removePermanentModifier(reachEnchantmentLv2.getId());
 			}
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:3s}") && !attributeInstance.hasModifier(reachEnchantmentLv3)) {
@@ -38,7 +38,7 @@ public class ReachHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:3s}") && attributeInstance.hasModifier(reachEnchantmentLv3)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("cc16cf93-9913-4026-8722-d5232c27bdee"));
+				attributeInstance.removePermanentModifier(reachEnchantmentLv3.getId());
 			}
 		}
 	}

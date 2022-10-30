@@ -75,3 +75,29 @@
 [29Oct.2022 21:23:34.870] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
 [29Oct.2022 21:23:34.876] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
 [29Oct.2022 21:23:34.877] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[29Oct.2022 21:23:58.042] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Removed 9 items from player Dev]
+[29Oct.2022 21:23:58.044] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Removed 9 items from player Dev
+[29Oct.2022 21:24:05.251] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[29Oct.2022 21:24:05.253] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[29Oct.2022 21:24:09.759] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[29Oct.2022 21:24:09.766] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[29Oct.2022 21:24:09.770] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[29Oct.2022 21:24:09.771] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[29Oct.2022 21:24:33.509] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[29Oct.2022 21:24:33.515] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[29Oct.2022 21:24:33.519] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[29Oct.2022 21:24:33.520] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[29Oct.2022 21:24:33.863] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[29Oct.2022 21:24:33.863] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[29Oct.2022 21:24:33.869] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[29Oct.2022 21:24:33.909] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[29Oct.2022 21:24:33.909] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[29Oct.2022 21:24:33.909] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[29Oct.2022 21:24:34.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:overworld
+[29Oct.2022 21:24:35.003] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_end
+[29Oct.2022 21:24:35.004] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Main Testing World]'/minecraft:the_nether
+[29Oct.2022 21:24:35.017] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World (2)): All chunks are saved
+[29Oct.2022 21:24:35.017] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[29Oct.2022 21:24:35.017] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[29Oct.2022 21:24:35.017] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[29Oct.2022 21:24:36.116] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

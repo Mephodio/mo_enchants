@@ -22,7 +22,7 @@ public class SwiftnessHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:1s}") && attributeInstance.hasModifier(swiftnessEnchantmentLv1)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("7a738a54-6d1f-423d-ba6d-282c405c46ea"));
+				attributeInstance.removePermanentModifier(swiftnessEnchantmentLv1.getId());
 			}
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:2s}") && !attributeInstance.hasModifier(swiftnessEnchantmentLv2)) {
@@ -30,7 +30,7 @@ public class SwiftnessHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:2s}") && attributeInstance.hasModifier(swiftnessEnchantmentLv2)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("430f19d0-3003-462d-a368-a7657ce2e34a"));
+				attributeInstance.removePermanentModifier(swiftnessEnchantmentLv2.getId());
 			}
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:3s}") && !attributeInstance.hasModifier(swiftnessEnchantmentLv3)) {
@@ -38,7 +38,7 @@ public class SwiftnessHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:3s}") && attributeInstance.hasModifier(swiftnessEnchantmentLv3)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("af804924-997d-42df-b85b-aa58553fb127"));
+				attributeInstance.removePermanentModifier(swiftnessEnchantmentLv3.getId());
 			}
 		}
 	}

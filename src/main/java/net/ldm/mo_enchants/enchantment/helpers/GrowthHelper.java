@@ -24,7 +24,7 @@ public class GrowthHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:1s}") && attributeInstance.hasModifier(growthEnchantmentLv1)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("4ff57341-51ff-4b44-a528-d667d28e6842"));
+				attributeInstance.removePermanentModifier(growthEnchantmentLv1.getId());
 			}
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:2s}") && !attributeInstance.hasModifier(growthEnchantmentLv2)) {
@@ -32,7 +32,7 @@ public class GrowthHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:2s}") && attributeInstance.hasModifier(growthEnchantmentLv2)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("86298a5e-7b75-486d-8aa6-ab7ac453b1ba"));
+				attributeInstance.removePermanentModifier(growthEnchantmentLv2.getId());
 			}
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:3s}") && !attributeInstance.hasModifier(growthEnchantmentLv3)) {
@@ -40,7 +40,7 @@ public class GrowthHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:3s}") && attributeInstance.hasModifier(growthEnchantmentLv3)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("9b4b6e29-3c81-45e6-99b0-34d970b06d64"));
+				attributeInstance.removePermanentModifier(growthEnchantmentLv3.getId());
 			}
 
 			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:4s}") && !attributeInstance.hasModifier(growthEnchantmentLv4)) {
@@ -48,7 +48,7 @@ public class GrowthHelper {
 			}
 
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:4s}") && attributeInstance.hasModifier(growthEnchantmentLv4)) {
-				attributeInstance.removePermanentModifier(UUID.fromString("f77f759c-f31d-45ae-a877-395ad1ebc44b"));
+				attributeInstance.removePermanentModifier(growthEnchantmentLv4.getId());
 			}
 		}
 	}
