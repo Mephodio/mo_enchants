@@ -37,9 +37,11 @@
 1. `Water Protection`: Damage protection from drowning, tridents, and the Aqua Slash enchantment
 2. Move `Aqua Slash` enchantment to use entity tags, instead of hardcode
 3. Add more nether mobs into `Aqua Slash` damage bonus (e.g. Strider)
+4. Enchantment Descriptions support
 
 ### v1.6 or v1.7
 
 1. Add `@bcat's` `Reeling` enchantment
 2. Add `@GGGamesXDlol's` `Telekinesis` enchantment
 3. Add `Replenish` enchantment (see `changelog.md`)
+4. Enchantment Descriptions support
