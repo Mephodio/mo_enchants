@@ -30,6 +30,7 @@
 14. ✅ Make `Density` increase gravity
 15. 🚫 Migrate `Density`, `Growth`, `Night Vision`, `Reach`, `Swiftness` and `Weightless` UUID's to `randomUUID()` from hardcoded UUID
 16. ✅ Migrate `✅ Density`, `✅Growth`, `✅ Reach`, `✅ Swiftness` and `✅ Weightless` UUID get to`getId()` from new UUID instance
+17. ✅ Lower the chances of `Rock Mending` increasing the durability
 
 ### v1.6
 
