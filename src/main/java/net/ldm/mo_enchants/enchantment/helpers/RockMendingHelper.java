@@ -12,10 +12,10 @@ public class RockMendingHelper {
 	public static void execute(Entity entity, BlockState state) {
 		if (!(entity instanceof LivingEntity livingEntity)) return;
 
-		ItemStack usedItemStack = livingEntity.getUseItem();
+		ItemStack usedItemStack = livingEntity.getMainHandItem();
 		int enchLevel = EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.ROCK_MENDING.get(), usedItemStack);
 
-		if (enchLevel > 0) return;
+		if (enchLevel < 0) return;
 		if (state.getMaterial() != net.minecraft.world.level.material.Material.STONE) return;
 		if (usedItemStack.getDamageValue() > usedItemStack.getMaxDamage()) return;
 

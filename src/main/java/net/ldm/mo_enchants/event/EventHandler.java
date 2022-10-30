@@ -51,8 +51,7 @@ public class EventHandler {
 
     @SubscribeEvent
     public static void onRightClickItem( PlayerInteractEvent.RightClickItem event) {
-        if (event.getHand() != event.getEntity().getUsedItemHand())
-            return;
+        if (event.getHand() != event.getEntity().getUsedItemHand()) return;
         BloodthirstHelper.execute(event.getLevel(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getEntity());
     }
 
