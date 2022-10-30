@@ -23,7 +23,7 @@
 8. ✅ Put cooldown on `Panic` enchantment (8s for I, 5s, for II, maybe)
 9. ✅ Remove unnecessary `@Nullable Event` parameter
 10. ✅ Fix `Angel's Blessing` enchantment animation
-11. 🛠️ Test version and make sure it is ready for distribution
+11. ✅ Test version and make sure it is ready for distribution
 12. ✅ `Panic` has a bug: if there is constant damage, game will crash (server tick loop) **Possible fixes:**
     1. ✅ Move `Panic` event call to `onEntityAttacked` from `onPlayerTick`
 13. ✅ `Curse of Freezing` and `Curse of Boiling` don't properly check for biomes
