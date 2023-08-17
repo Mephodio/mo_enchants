@@ -2,30 +2,29 @@
 name: Bug report
 about: Create a report to help us improve
 title: ''
-labels: ''
-assignees: ''
+labels: bug
+assignees: LDMGamingYT
 
 ---
+
+**Mod version**
+Include **your** Minecraft, mod loader and mod versions. Ex. Minecraft 1.19.3, Forge 44.1.0, Mo' Enchants 1.2.
 
 **Describe the bug**
 A clear and concise description of what the bug is.
 
 **To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+Steps to reproduce the issue:
+1. Go to [...]
+2. Acquire the [...]
+3. Use the [...]
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**What should have happened normally**
+A clear and concise description of what should've happened, or what you expected to happen.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. Windows 11]
- - Java Version [e.g. 17.0.1 (you can check this by running `java --version` in CMD or Terminal]
-
-**Additional context**
+**Additional information I should know**
 Add any other context about the problem here.
+
+
+**Screenshots and Logs**
+If applicable, add screenshots and your game logs (found in `<game directory>/logs/latest.log`).
