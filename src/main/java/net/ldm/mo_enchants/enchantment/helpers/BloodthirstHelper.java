@@ -26,10 +26,10 @@ public class BloodthirstHelper {
 		if (entity == null) return;
 		if (EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(), (entity instanceof LivingEntity livingEntity ? livingEntity.getMainHandItem() : ItemStack.EMPTY)) <= 0) return;
 
-		if (!entity.getPersistentData().getBoolean("bloodthirstAbilityCooldown")) {
-			entity.getPersistentData().putBoolean("bloodthirstAbilityCooldown", true);
+		if (entity.getLevel().getGameTime() - entity.getPersistentData().getLong("bloodthirstAbilityTriggerTime")
+				> 240) {
+			entity.getPersistentData().putLong("bloodthirstAbilityTriggerTime", entity.getLevel().getGameTime());
 
-			// if not on cooldown - starts here
 			if (entity instanceof LivingEntity livingEntity) {
 				livingEntity.hurt(new DamageSource("enchantment.bloodthirst").bypassArmor(), 5);
 				livingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 240, EnchantmentHelper.getTagEnchantmentLevel(MoEnchantsEnchantments.BLOODTHIRST.get(), livingEntity.getMainHandItem())));
@@ -48,31 +48,6 @@ public class BloodthirstHelper {
 							SoundSource.PLAYERS, 1, 0.8f, false);
 				}
 			}
-			// if not on cooldown - ends here
-
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-
-				public void start(int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
-					}
-				}
-
-				private void run() {
-					entity.getPersistentData().putBoolean("bloodthirstAbilityCooldown", false);
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(240);
 		} else {
 			if (entity instanceof Player player && !player.level.isClientSide())
 				player.displayClientMessage(Component.translatable("cooldown.input", Component.translatable("enchantment.mo_enchants.bloodthirst")), true);

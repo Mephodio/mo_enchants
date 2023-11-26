@@ -11,9 +11,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.LiquidBlock;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class AquaphobiaCurseHelper {
 	public static void execute( LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -33,34 +30,12 @@ public class AquaphobiaCurseHelper {
 				(entity instanceof LivingEntity _entGetArmor
 						? _entGetArmor.getItemBySlot(EquipmentSlot.FEET)
 						: ItemStack.EMPTY)) != 0)) {
-			if (!entity.getPersistentData().getBoolean("aquaphobiaDamageCooldown")) {
+
+			if (entity.getLevel().getGameTime() - entity.getPersistentData().getLong("aquaphobiaDamageTriggerTime")
+					> 10) {
+				entity.getPersistentData().putLong("aquaphobiaDamageTriggerTime", entity.getLevel().getGameTime());
 				if (entity instanceof LivingEntity _entity)
 					_entity.hurt(new DamageSource("curse.aquaphobia").bypassArmor(), 1);
-				entity.getPersistentData().putBoolean("aquaphobiaDamageCooldown", (true));
-			} else {
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
-
-					public void start(int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-					}
-
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
-						}
-					}
-
-					private void run() {
-						entity.getPersistentData().putBoolean("aquaphobiaDamageCooldown", (false));
-						MinecraftForge.EVENT_BUS.unregister(this);
-					}
-				}.start(10);
 			}
 		}
 	}
