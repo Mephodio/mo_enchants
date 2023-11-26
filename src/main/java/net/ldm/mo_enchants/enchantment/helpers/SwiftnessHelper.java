@@ -17,28 +17,24 @@ public class SwiftnessHelper {
 		if (event.getSlot().equals(EquipmentSlot.FEET)) {
 			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(Attributes.MOVEMENT_SPEED);
 
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:1s}") && !attributeInstance.hasModifier(swiftnessEnchantmentLv1)) {
-				attributeInstance.addPermanentModifier(swiftnessEnchantmentLv1);
-			}
-
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:1s}") && attributeInstance.hasModifier(swiftnessEnchantmentLv1)) {
 				attributeInstance.removePermanentModifier(swiftnessEnchantmentLv1.getId());
 			}
-
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:2s}") && !attributeInstance.hasModifier(swiftnessEnchantmentLv2)) {
-				attributeInstance.addPermanentModifier(swiftnessEnchantmentLv2);
-			}
-
-			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:2s}") && attributeInstance.hasModifier(swiftnessEnchantmentLv2)) {
+			else if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:2s}") && attributeInstance.hasModifier(swiftnessEnchantmentLv2)) {
 				attributeInstance.removePermanentModifier(swiftnessEnchantmentLv2.getId());
 			}
-
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:3s}") && !attributeInstance.hasModifier(swiftnessEnchantmentLv3)) {
-				attributeInstance.addPermanentModifier(swiftnessEnchantmentLv3);
+			else if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:3s}") && attributeInstance.hasModifier(swiftnessEnchantmentLv3)) {
+				attributeInstance.removePermanentModifier(swiftnessEnchantmentLv3.getId());
 			}
 
-			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:3s}") && attributeInstance.hasModifier(swiftnessEnchantmentLv3)) {
-				attributeInstance.removePermanentModifier(swiftnessEnchantmentLv3.getId());
+			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:1s}") && !attributeInstance.hasModifier(swiftnessEnchantmentLv1)) {
+				attributeInstance.addPermanentModifier(swiftnessEnchantmentLv1);
+			}
+			else if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:2s}") && !attributeInstance.hasModifier(swiftnessEnchantmentLv2)) {
+				attributeInstance.addPermanentModifier(swiftnessEnchantmentLv2);
+			}
+			else if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:swiftness\",lvl:3s}") && !attributeInstance.hasModifier(swiftnessEnchantmentLv3)) {
+				attributeInstance.addPermanentModifier(swiftnessEnchantmentLv3);
 			}
 		}
 	}

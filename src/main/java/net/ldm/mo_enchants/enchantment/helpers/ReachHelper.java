@@ -17,28 +17,24 @@ public class ReachHelper {
 		if (event.getSlot().equals(EquipmentSlot.MAINHAND)) {
 			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(ForgeMod.REACH_DISTANCE.get());
 
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:1s}") && !attributeInstance.hasModifier(reachEnchantmentLv1)) {
-				attributeInstance.addPermanentModifier(reachEnchantmentLv1);
-			}
-
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:1s}") && attributeInstance.hasModifier(reachEnchantmentLv1)) {
 				attributeInstance.removePermanentModifier(reachEnchantmentLv1.getId());
 			}
-
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:2s}") && !attributeInstance.hasModifier(reachEnchantmentLv2)) {
-				attributeInstance.addPermanentModifier(reachEnchantmentLv2);
-			}
-
-			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:2s}") && attributeInstance.hasModifier(reachEnchantmentLv2)) {
+			else if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:2s}") && attributeInstance.hasModifier(reachEnchantmentLv2)) {
 				attributeInstance.removePermanentModifier(reachEnchantmentLv2.getId());
 			}
-
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:3s}") && !attributeInstance.hasModifier(reachEnchantmentLv3)) {
-				attributeInstance.addPermanentModifier(reachEnchantmentLv3);
+			else if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:3s}") && attributeInstance.hasModifier(reachEnchantmentLv3)) {
+				attributeInstance.removePermanentModifier(reachEnchantmentLv3.getId());
 			}
 
-			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:3s}") && attributeInstance.hasModifier(reachEnchantmentLv3)) {
-				attributeInstance.removePermanentModifier(reachEnchantmentLv3.getId());
+			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:1s}") && !attributeInstance.hasModifier(reachEnchantmentLv1)) {
+				attributeInstance.addPermanentModifier(reachEnchantmentLv1);
+			}
+			else if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:2s}") && !attributeInstance.hasModifier(reachEnchantmentLv2)) {
+				attributeInstance.addPermanentModifier(reachEnchantmentLv2);
+			}
+			else if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:reach\",lvl:3s}") && !attributeInstance.hasModifier(reachEnchantmentLv3)) {
+				attributeInstance.addPermanentModifier(reachEnchantmentLv3);
 			}
 		}
 	}

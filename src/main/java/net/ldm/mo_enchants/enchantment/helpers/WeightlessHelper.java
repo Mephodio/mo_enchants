@@ -16,20 +16,18 @@ public class WeightlessHelper {
 		if (event.getSlot().equals(EquipmentSlot.LEGS)) {
 			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(ForgeMod.ENTITY_GRAVITY.get());
 
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:1s}") && !attributeInstance.hasModifier(weightlessEnchantmentLv1)) {
-				attributeInstance.addPermanentModifier(weightlessEnchantmentLv1);
-			}
-
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:1s}") && attributeInstance.hasModifier(weightlessEnchantmentLv1)) {
 				attributeInstance.removePermanentModifier(weightlessEnchantmentLv1.getId());
 			}
-
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:2s}") && !attributeInstance.hasModifier(weightlessEnchantmentLv2)) {
-				attributeInstance.addPermanentModifier(weightlessEnchantmentLv2);
+			else if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:2s}") && attributeInstance.hasModifier(weightlessEnchantmentLv2)) {
+				attributeInstance.removePermanentModifier(weightlessEnchantmentLv2.getId());
 			}
 
-			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:2s}") && attributeInstance.hasModifier(weightlessEnchantmentLv2)) {
-				attributeInstance.removePermanentModifier(weightlessEnchantmentLv2.getId());
+			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:1s}") && !attributeInstance.hasModifier(weightlessEnchantmentLv1)) {
+				attributeInstance.addPermanentModifier(weightlessEnchantmentLv1);
+			}
+			else if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:weightless\",lvl:2s}") && !attributeInstance.hasModifier(weightlessEnchantmentLv2)) {
+				attributeInstance.addPermanentModifier(weightlessEnchantmentLv2);
 			}
 		}
 	}

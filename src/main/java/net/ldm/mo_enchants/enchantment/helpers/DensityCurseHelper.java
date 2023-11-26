@@ -15,12 +15,12 @@ public class DensityCurseHelper {
 		if (event.getSlot().equals(EquipmentSlot.HEAD) || event.getSlot().equals(EquipmentSlot.CHEST) || event.getSlot().equals(EquipmentSlot.LEGS) || event.getSlot().equals(EquipmentSlot.FEET)) {
 			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(ForgeMod.ENTITY_GRAVITY.get());
 
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:density_curse\",lvl:1s}") && !attributeInstance.hasModifier(densityCurse)) {
-				attributeInstance.addPermanentModifier(densityCurse);
-			}
-
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:density_curse\",lvl:1s}") && attributeInstance.hasModifier(densityCurse)) {
 				attributeInstance.removePermanentModifier(densityCurse.getId());
+			}
+
+			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:density_curse\",lvl:1s}") && !attributeInstance.hasModifier(densityCurse)) {
+				attributeInstance.addPermanentModifier(densityCurse);
 			}
 		}
 	}

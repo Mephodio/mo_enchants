@@ -19,36 +19,30 @@ public class GrowthHelper {
 				event.getSlot().equals(EquipmentSlot.LEGS) || event.getSlot().equals(EquipmentSlot.FEET)) {
 			final AttributeInstance attributeInstance = event.getEntity().getAttributes().getInstance(Attributes.MAX_HEALTH);
 
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:1s}") && !attributeInstance.hasModifier(growthEnchantmentLv1)) {
-				attributeInstance.addPermanentModifier(growthEnchantmentLv1);
-			}
-
 			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:1s}") && attributeInstance.hasModifier(growthEnchantmentLv1)) {
 				attributeInstance.removePermanentModifier(growthEnchantmentLv1.getId());
 			}
-
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:2s}") && !attributeInstance.hasModifier(growthEnchantmentLv2)) {
-				attributeInstance.addPermanentModifier(growthEnchantmentLv2);
-			}
-
-			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:2s}") && attributeInstance.hasModifier(growthEnchantmentLv2)) {
+			else if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:2s}") && attributeInstance.hasModifier(growthEnchantmentLv2)) {
 				attributeInstance.removePermanentModifier(growthEnchantmentLv2.getId());
 			}
-
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:3s}") && !attributeInstance.hasModifier(growthEnchantmentLv3)) {
-				attributeInstance.addPermanentModifier(growthEnchantmentLv3);
-			}
-
-			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:3s}") && attributeInstance.hasModifier(growthEnchantmentLv3)) {
+			else if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:3s}") && attributeInstance.hasModifier(growthEnchantmentLv3)) {
 				attributeInstance.removePermanentModifier(growthEnchantmentLv3.getId());
 			}
-
-			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:4s}") && !attributeInstance.hasModifier(growthEnchantmentLv4)) {
-				attributeInstance.addPermanentModifier(growthEnchantmentLv4);
+			else if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:4s}") && attributeInstance.hasModifier(growthEnchantmentLv4)) {
+				attributeInstance.removePermanentModifier(growthEnchantmentLv4.getId());
 			}
 
-			if (attributeInstance != null && event.getFrom().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:4s}") && attributeInstance.hasModifier(growthEnchantmentLv4)) {
-				attributeInstance.removePermanentModifier(growthEnchantmentLv4.getId());
+			if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:1s}") && !attributeInstance.hasModifier(growthEnchantmentLv1)) {
+				attributeInstance.addPermanentModifier(growthEnchantmentLv1);
+			}
+			else if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:2s}") && !attributeInstance.hasModifier(growthEnchantmentLv2)) {
+				attributeInstance.addPermanentModifier(growthEnchantmentLv2);
+			}
+			else if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:3s}") && !attributeInstance.hasModifier(growthEnchantmentLv3)) {
+				attributeInstance.addPermanentModifier(growthEnchantmentLv3);
+			}
+			else if (attributeInstance != null && event.getTo().getEnchantmentTags().getAsString().contains("{id:\"mo_enchants:growth\",lvl:4s}") && !attributeInstance.hasModifier(growthEnchantmentLv4)) {
+				attributeInstance.addPermanentModifier(growthEnchantmentLv4);
 			}
 		}
 	}
