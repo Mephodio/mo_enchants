@@ -85,5 +85,6 @@
   "enchantment.mo_enchants.venomfang": "Venomfang",
   "enchantment.mo_enchants.venomfang.desc": "Gives Poison I for 5 seconds (Venomfang I) or Poison II for 7.5 seconds (Venomfang II).",
   "enchantment.mo_enchants.weightless": "Weightless",
+  "enchantment.mo_enchants.weightless.desc": "Allows you to jump higher, the level of the enchantment determines how high you jump.",
   "key.category.enchantments": "Enchantments"
 }
